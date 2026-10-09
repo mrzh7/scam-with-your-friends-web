@@ -29,6 +29,14 @@
   <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
 </p>
 
+<!-- Ranking badges (uncomment when live — do not leave broken images):
+  Trendshift appears only after the repo is listed at https://trendshift.io
+  (replace REPO_ID with the id shown on https://trendshift.io/repositories/<id>):
+  <a href="https://trendshift.io/repositories/REPO_ID" target="_blank"><img src="https://trendshift.io/api/badge/repositories/REPO_ID" alt="mrzh7/scam-with-your-friends-web | Trendshift" width="250" height="55"/></a>
+  Star History rank badge (works only once the repo is in their ranking):
+  <a href="https://www.star-history.com/mrzh7/scam-with-your-friends-web"><img src="https://api.star-history.com/badge?repo=mrzh7/scam-with-your-friends-web" alt="Star History Rank" height="55"/></a>
+-->
+
 [![游戏玩法预览](docs/media/trailer-preview.gif)](https://scam.gamefun.world)
 
 </div>
@@ -156,6 +164,10 @@ npm run check:i18n
 ## 参与贡献
 
 欢迎改进手机体验、翻译、无障碍和语音稳定性。见 [贡献说明](CONTRIBUTING.md)。安全问题请按 [SECURITY.md](SECURITY.md) 私下反馈。
+
+## Star 历史
+
+<a href="https://www.star-history.com/#mrzh7/scam-with-your-friends-web&Date"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /></picture></a>
 
 <div align="center">
 
