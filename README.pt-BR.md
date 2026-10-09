@@ -2,6 +2,10 @@
 
 # Scam With Your Friends — Web
 
+> Administre um call center de golpes com seus amigos. Use esquemas cada vez mais ridículos para enganar chamadores de IA e levá-los a entregar as economias de uma vida. Cumpra a meta diária, cause caos no escritório e sobreviva a uma avaliação de desempenho brutal do seu chefe explosivo.
+
+<sub>Descrição do jogo original (tradução) · [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)</sub>
+
 ### Jogo de festa co-op online de call center · simulador de trabalho · comédia sombria, direto no navegador
 
 **Atenda chamadores de IA fictícios, converse por voz com sua equipe, gerencie o tempo, bata a meta diária e sobreviva à avaliação de desempenho.**
@@ -45,10 +49,6 @@
 ## Inspirado no jogo oficial
 
 **Loja oficial:** [Scam With Your Friends na Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)
-
-> Administre um call center de golpes com seus amigos. Use esquemas cada vez mais ridículos para enganar chamadores de IA e levá-los a entregar as economias de uma vida. Cumpra a meta diária, cause caos no escritório e sobreviva a uma avaliação de desempenho brutal do seu chefe explosivo.
->
-> *(Tradução da descrição curta da página Steam em inglês; o texto oficial em inglês está no README em inglês.)*
 
 <p align="center">
   <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1791402592" alt="Oficial Steam header" width="920" /></a>

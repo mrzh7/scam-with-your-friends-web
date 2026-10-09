@@ -2,6 +2,10 @@
 
 # Scam With Your Friends — Web
 
+> 和朋友们一起经营一家诈骗呼叫中心。用越来越荒唐的骗局，骗光 AI 来电者毕生的积蓄。完成每日指标，把办公室搅得天翻地覆，并在暴怒成性的老板面前熬过一场残酷的绩效考核。
+
+<sub>原作介绍（译文） · [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)</sub>
+
 ### 浏览器在线合作呼叫中心派对游戏 · 职场模拟 · 黑色幽默
 
 **接听虚构 AI 来电，和队友语音协作，管理时间，达成每日业绩并撑过绩效考核。**
@@ -45,8 +49,6 @@
 ## 灵感来自官方游戏
 
 **官方商店页：** [Steam 上的《Scam With Your Friends》](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)
-
-> 和朋友们一起经营一家诈骗呼叫中心。用越来越荒唐的骗局，骗光 AI 来电者毕生的积蓄。完成每日指标，把办公室搅得天翻地覆，并在暴怒成性的老板面前熬过一场残酷的绩效考核。
 
 <p align="center">
   <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1791402592" alt="官方 Steam header" width="920" /></a>

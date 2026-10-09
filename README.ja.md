@@ -2,6 +2,10 @@
 
 # Scam With Your Friends — Web
 
+> 友達と一緒に詐欺コールセンターを運営しよう。どんどん荒唐無稽になる手口で AI 発信者をだまし、一生分の貯蓄を巻き上げる。1 日のノルマを達成し、オフィスを大混乱に陥れ、キレやすい上司の残酷な人事評価を生き延びよう。
+
+<sub>原作の紹介（翻訳） · [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)</sub>
+
 ### ブラウザで遊べるオンライン協力プレイのコールセンター・パーティーゲーム · 仕事シミュレーター · ブラックコメディ
 
 **架空の AI 発信者からの電話に出て、チームとボイスチャットで連携し、時間を管理して、1 日のノルマを達成し、人事評価を乗り切ろう。**
@@ -45,10 +49,6 @@
 ## 公式ゲームに着想
 
 **公式ストア:** [Steam の Scam With Your Friends](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)
-
-> 友達と一緒に詐欺コールセンターを運営しよう。どんどん荒唐無稽になる手口で AI 発信者をだまし、一生分の貯蓄を巻き上げる。1 日のノルマを達成し、オフィスを大混乱に陥れ、キレやすい上司の残酷な人事評価を生き延びよう。
->
-> *（Steam 英語ページの短い説明の翻訳。公式英語原文は英語 README を参照。）*
 
 <p align="center">
   <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1791402592" alt="公式 Steam header" width="920" /></a>
