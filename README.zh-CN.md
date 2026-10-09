@@ -42,7 +42,28 @@
 
 </div>
 
-《Scam With Your Friends — Web》是一款非官方、免费的开源网页游戏：在混乱的虚构**呼叫中心**里玩**在线合作**的**职场模拟**。走到工位，接听会根据你的话做出反应的 **AI 来电**（打字，或在浏览器支持时用**语音控制**），完成桌面任务赚取游戏币。在**时间管理**循环中追赶**每日业绩**，应对办公室事故，迎接老板的**绩效考核**。最多四位好友一起玩，是一款**黑色幽默派对游戏**。所有内容均为虚构，请勿输入真实支付资料。
+## 灵感来自官方游戏
+
+**官方商店页：** [Steam 上的《Scam With Your Friends》](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)
+
+> 和朋友们一起经营一家诈骗呼叫中心。用越来越荒唐的骗局，骗光 AI 来电者毕生的积蓄。完成每日指标，把办公室搅得天翻地覆，并在暴怒成性的老板面前熬过一场残酷的绩效考核。
+
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1791402592" alt="官方 Steam header" width="920" /></a>
+</p>
+
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/bcff5f79257b09d3477d82fbfc880c4d084bfee2/ss_bcff5f79257b09d3477d82fbfc880c4d084bfee2.1920x1080.jpg?t=1791402592" width="48%" alt="官方 Steam screenshot 1" /></a>
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/afe1c51df0a3e01d5d238a949a2754e5a00636a2/ss_afe1c51df0a3e01d5d238a949a2754e5a00636a2.1920x1080.jpg?t=1791402592" width="48%" alt="官方 Steam screenshot 2" /></a>
+</p>
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/d7676d89d64b88d0c817009cbb08afed3cfbf8b6/ss_d7676d89d64b88d0c817009cbb08afed3cfbf8b6.1920x1080.jpg?t=1791402592" width="48%" alt="官方 Steam screenshot 3" /></a>
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/e29f4717a68c3234d24b824db66c4d56a8102b21/ss_e29f4717a68c3234d24b824db66c4d56a8102b21.1920x1080.jpg?t=1791402592" width="48%" alt="官方 Steam screenshot 4" /></a>
+</p>
+
+本仓库是**非官方免费浏览器实验**：不是原作、不是官方移植，也与原作开发者**无关**。上方 Steam 头图与截图版权归原权利人所有，仅从 Steam **热链接引用**作对照，仓库内不收录原作画面文件。详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+**《Scam With Your Friends — Web》**是可在浏览器试玩的非官方免费同人作品（[scam.gamefun.world](https://scam.gamefun.world)）：和朋友们一起经营**诈骗呼叫中心**，用越来越荒唐的骗局骗过 **AI 来电者**，完成**每日指标**，把**办公室**搅得天翻地覆，并在暴怒成性的老板面前熬过残酷的**绩效考核**。走到工位，打字或用**语音控制**交流，完成桌面任务赚取游戏币，最多四人联机。所有内容均为虚构，请勿输入真实支付资料。
 
 ![项目概览](docs/media/cover.svg)
 
@@ -88,7 +109,7 @@ https://github.com/user-attachments/assets/5013ead8-cf12-4d1b-89f5-1818df086993
 
 **[立即试玩 → https://scam.gamefun.world](https://scam.gamefun.world)** — 线上试玩站需 Google 登录或验证邮箱；**开源代码默认不启用账户**。
 
-这是受 Steam 上《[Scam With Your Friends](https://store.steampowered.com/app/4954910/)》启发的非官方网页实验，不是原作，也不是官方移植，与原作开发者无关。见 [素材来源与许可证](THIRD_PARTY_NOTICES.md)。游戏里的卡片、任务编号和资金均为虚构，**请勿输入真实支付资料**。
+再次说明：这是受 [Steam 上《Scam With Your Friends》](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/) 启发的**非官方**网页同人，不是原作、不是官方移植，与原作开发者无关。见 [素材来源与许可证](THIRD_PARTY_NOTICES.md)。游戏里的卡片、任务编号和资金均为虚构，**请勿输入真实支付资料**。
 
 ## 怎么玩
 

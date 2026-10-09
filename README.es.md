@@ -42,7 +42,30 @@
 
 </div>
 
-Scam With Your Friends — Web es un juego de navegador gratuito y no oficial, además de un proyecto de código abierto: un **simulador de trabajo cooperativo en línea** ambientado en un **centro de llamadas** ficticio y caótico. Camina hasta tu escritorio, contesta a **llamantes de IA** que reaccionan a lo que dices (escrito, o hablado con **control por voz** donde tu navegador lo admita) y completa tareas de escritorio para ganar dinero dentro del juego. Corre contra el reloj en un bucle de **gestión del tiempo** con **cuota diaria**, esquiva accidentes de oficina y afronta la **evaluación de desempeño** del jefe. Es un **juego de fiesta de comedia negra** para hasta cuatro amigos. Todo es ficticio; nunca introduzcas datos de pago reales.
+## Inspirado en el juego oficial
+
+**Tienda oficial:** [Scam With Your Friends en Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)
+
+> Dirige un centro de llamadas de estafas con tus amigos. Usa esquemas cada vez más ridículos para engañar a llamantes de IA y quitarles los ahorros de toda su vida. Cumple la cuota diaria, siembra el caos en la oficina y sobrevive a una evaluación de desempeño brutal de tu jefe irascible.
+>
+> *(Traducción de la descripción corta de la página de Steam en inglés; el texto oficial en inglés está en el README en inglés.)*
+
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1791402592" alt="Oficial Steam header" width="920" /></a>
+</p>
+
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/bcff5f79257b09d3477d82fbfc880c4d084bfee2/ss_bcff5f79257b09d3477d82fbfc880c4d084bfee2.1920x1080.jpg?t=1791402592" width="48%" alt="Oficial Steam screenshot 1" /></a>
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/afe1c51df0a3e01d5d238a949a2754e5a00636a2/ss_afe1c51df0a3e01d5d238a949a2754e5a00636a2.1920x1080.jpg?t=1791402592" width="48%" alt="Oficial Steam screenshot 2" /></a>
+</p>
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/d7676d89d64b88d0c817009cbb08afed3cfbf8b6/ss_d7676d89d64b88d0c817009cbb08afed3cfbf8b6.1920x1080.jpg?t=1791402592" width="48%" alt="Oficial Steam screenshot 3" /></a>
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/e29f4717a68c3234d24b824db66c4d56a8102b21/ss_e29f4717a68c3234d24b824db66c4d56a8102b21.1920x1080.jpg?t=1791402592" width="48%" alt="Oficial Steam screenshot 4" /></a>
+</p>
+
+Este repositorio es un **experimento gratuito y no oficial en el navegador**. **No** es el juego original, **no** es un port oficial y **no está afiliado** con los desarrolladores originales. El encabezado y las capturas de Steam de arriba son © de sus titulares y se muestran **por hotlink desde Steam solo como referencia** — no están incluidos en este repositorio. Ver [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+**Scam With Your Friends — Web** es un remake no oficial y gratuito que puedes jugar en el navegador en [scam.gamefun.world](https://scam.gamefun.world): dirige un **centro de llamadas de estafas con tus amigos**, usa esquemas cada vez más ridículos para engañar a **llamantes de IA**, cumple la **cuota diaria**, siembra el **caos en la oficina** y sobrevive a una **evaluación de desempeño** brutal del jefe. Camina hasta el escritorio, habla (escrito o con **control por voz** si hay soporte), completa tareas de escritorio y juega en cooperativo con hasta cuatro personas. Todo es ficticio; nunca introduzcas datos de pago reales.
 
 ![Scam With Your Friends — Web: resumen](docs/media/cover.svg)
 
@@ -88,7 +111,7 @@ Animación cinematográfica creada con la oficina, los personajes y los retratos
 
 **[Juega a la demo alojada → https://scam.gamefun.world](https://scam.gamefun.world)** — inicio de sesión con Google o correo verificado en la demo; **el código fuente viene por defecto sin cuentas**.
 
-Este es un proyecto experimental y no oficial inspirado en [Scam With Your Friends](https://store.steampowered.com/app/4954910/) de Steam. No es el juego original ni un port oficial, y no está afiliado a sus desarrolladores. Consulta [procedencia y licencias](THIRD_PARTY_NOTICES.md). Todos los ID de tarea, tarjetas, fondos y eventos son ficticios. **No introduzcas datos de pago reales.**
+Otra vez: este es un remake **no oficial** en el navegador inspirado en [Scam With Your Friends](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/) — no es el original, no es un port oficial y no está afiliado a sus desarrolladores. Consulta [procedencia y licencias](THIRD_PARTY_NOTICES.md). Todos los ID de tarea, tarjetas, fondos y eventos son ficticios. **No introduzcas datos de pago reales.**
 
 ## Cómo jugar
 
