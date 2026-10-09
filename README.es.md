@@ -6,7 +6,7 @@
 
 **Contesta llamantes de IA ficticios, habla por voz con tu equipo, gestiona tu tiempo, cumple la cuota diaria y sobrevive a la evaluación de desempeño.**
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · **Español** · [日本語](README.ja.md)
+[English](README.md) · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · **Español** · [日本語](README.ja.md) · [Comentarios](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose)
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ Jugar a la demo</strong></a>
@@ -36,6 +36,29 @@
 Scam With Your Friends — Web es un juego de navegador gratuito y no oficial, además de un proyecto de código abierto: un **simulador de trabajo cooperativo en línea** ambientado en un **centro de llamadas** ficticio y caótico. Camina hasta tu escritorio, contesta a **llamantes de IA** que reaccionan a lo que dices (escrito, o hablado con **control por voz** donde tu navegador lo admita) y completa tareas de escritorio para ganar dinero dentro del juego. Corre contra el reloj en un bucle de **gestión del tiempo** con **cuota diaria**, esquiva accidentes de oficina y afronta la **evaluación de desempeño** del jefe. Es un **juego de fiesta de comedia negra** para hasta cuatro amigos. Todo es ficticio; nunca introduzcas datos de pago reales.
 
 ![Scam With Your Friends — Web: resumen](docs/media/cover.svg)
+
+## Capturas de pantalla
+
+[![Mural de capturas: oficina, mesa de llamadas y menú principal](docs/media/screenshot-wall.png)](https://scam.gamefun.world)
+
+| Oficina en Three.js | Mesa de llamadas entrantes | Menú principal |
+| --- | --- | --- |
+| Camina, siéntate, compra y recoge entregas | Habla con llamantes de IA y completa la tarea | Solitario, código de sala cooperativa, ajustes |
+
+Capturadas de esta implementación con una cuenta de prueba sintética y diálogo sin conexión — no son imágenes del juego original. Capturas individuales: [oficina](docs/media/office.png), [escritorio](docs/media/desktop.png), [menú](docs/media/menu.png).
+
+## Características
+
+| Sistema | Implementación |
+| --- | --- |
+| Oficina | Sala procedural en Three.js, movimiento, interacción, equipo y animación sentado |
+| Llamadas | Ocho perfiles de llamantes de IA, confianza/paciencia, respuestas sin conexión con guion, diálogo con IA opcional |
+| Semana laboral | Siete días, temporizadores de cuota diaria, tienda, recogida de entregas, inventario, accidentes y evaluación de desempeño |
+| Voz | Control por voz mediante reconocimiento de voz donde se admita, chat de voz de equipo, TTS opcional con MiniMax o ElevenLabs |
+| Cooperativo | Cooperativo en línea para hasta cuatro jugadores, estado por WebSocket, día/cuota compartidos y voz WebRTC |
+| Cuentas | Opcional; desactivadas por defecto. Google o correo/contraseña verificado mediante Resend |
+| Partidas guardadas | Partidas de cuenta en D1, detección de conflictos de revisión y recuperación/exportación local |
+| Idiomas | Inglés, chino, portugués, japonés, español |
 
 ## Por qué jugar
 
@@ -67,29 +90,6 @@ Este es un proyecto experimental y no oficial inspirado en [Scam With Your Frien
 5. **Alcanza la cuota diaria** antes de que acabe el temporizador del turno y supera la evaluación de desempeño — si fallas, la partida termina. Cooperativo: hasta cuatro jugadores comparten el día; **V** para la voz de equipo.
 
 Reglas completas: [Guía de jugabilidad](docs/GAMEPLAY-ES.md) — bucle de ronda, controles, llamadas y confianza, herramientas, dinero, objetos de la tienda, accidentes, voz cooperativa y notas de audio. También disponible en: [English](docs/GAMEPLAY-EN.md) · [简体中文](docs/GAMEPLAY.md) · [Português](docs/GAMEPLAY-PT.md) · [日本語](docs/GAMEPLAY-JA.md).
-
-## Capturas de pantalla
-
-[![Mural de capturas: oficina, mesa de llamadas y menú principal](docs/media/screenshot-wall.png)](https://scam.gamefun.world)
-
-| Oficina en Three.js | Mesa de llamadas entrantes | Menú principal |
-| --- | --- | --- |
-| Camina, siéntate, compra y recoge entregas | Habla con llamantes de IA y completa la tarea | Solitario, código de sala cooperativa, ajustes |
-
-Capturadas de esta implementación con una cuenta de prueba sintética y diálogo sin conexión — no son imágenes del juego original. Capturas individuales: [oficina](docs/media/office.png), [escritorio](docs/media/desktop.png), [menú](docs/media/menu.png).
-
-## Características
-
-| Sistema | Implementación |
-| --- | --- |
-| Oficina | Sala procedural en Three.js, movimiento, interacción, equipo y animación sentado |
-| Llamadas | Ocho perfiles de llamantes de IA, confianza/paciencia, respuestas sin conexión con guion, diálogo con IA opcional |
-| Semana laboral | Siete días, temporizadores de cuota diaria, tienda, recogida de entregas, inventario, accidentes y evaluación de desempeño |
-| Voz | Control por voz mediante reconocimiento de voz donde se admita, chat de voz de equipo, TTS opcional con MiniMax o ElevenLabs |
-| Cooperativo | Cooperativo en línea para hasta cuatro jugadores, estado por WebSocket, día/cuota compartidos y voz WebRTC |
-| Cuentas | Opcional; desactivadas por defecto. Google o correo/contraseña verificado mediante Resend |
-| Partidas guardadas | Partidas de cuenta en D1, detección de conflictos de revisión y recuperación/exportación local |
-| Idiomas | Inglés, chino, portugués, japonés, español |
 
 ## Inicio rápido — sin cuentas
 
@@ -143,6 +143,15 @@ npm run check:i18n
 ```
 
 Consulta las [notas de aceptación](docs/ACCEPTANCE.md), [SECURITY.md](SECURITY.md) y el [flujo de datos](docs/PRIVACY.md). Límites conocidos: WebGL y voz varían en el móvil; no hay sistema de pagos; las partidas en solitario enviadas por el cliente no sirven para recompensas con dinero real.
+
+## Comentarios y comunidad
+
+¿Encontraste un error o tienes una idea? Cuéntanoslo:
+
+- [Reportar un error](https://github.com/mrzh7/scam-with-your-friends-web/issues/new?template=bug_report.yml)
+- [Solicitar una función](https://github.com/mrzh7/scam-with-your-friends-web/issues/new?template=feature_request.yml)
+- [Discusiones (preguntas e ideas)](https://github.com/mrzh7/scam-with-your-friends-web/discussions)
+- [Política de seguridad](SECURITY.md)
 
 ## Contribuir
 
