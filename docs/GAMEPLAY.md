@@ -1,6 +1,6 @@
 # 游戏玩法介绍与系统设计 · v0.2
 
-**简体中文** · [English](GAMEPLAY-EN.md)
+[English](GAMEPLAY-EN.md) · **简体中文** · [Português](GAMEPLAY-PT.md) · [Español](GAMEPLAY-ES.md) · [日本語](GAMEPLAY-JA.md)
 
 这是本仓库已实现的网页规则。原作公开资料确认“AI 来电、窗口化电脑、合作办公室、业绩、商店、事故、每日考核”的主循环；下面的七日曲线、配送时长、升级效果、地图尺度和物理参数是网页补充设计，不能当作原作隐藏规则。原作依据见 [研究档案](RESEARCH.md)。游戏内的 Handbook 和“玩法”按钮提供对应介绍。
 

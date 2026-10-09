@@ -1,0 +1,159 @@
+<div align="center">
+
+# Scam With Your Friends — Web
+
+### Juego de fiesta cooperativo en línea de centro de llamadas · simulador de trabajo · comedia negra, en tu navegador
+
+**Contesta llamantes de IA ficticios, habla por voz con tu equipo, gestiona tu tiempo, cumple la cuota diaria y sobrevive a la evaluación de desempeño.**
+
+[English](README.md) · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · **Español** · [日本語](README.ja.md)
+
+<p align="center">
+  <a href="https://scam.gamefun.world"><strong>▶ Jugar a la demo</strong></a>
+  &nbsp;·&nbsp;
+  <a href="#mira-el-tráiler"><strong>Tráiler</strong></a>
+  &nbsp;·&nbsp;
+  <a href="#cómo-jugar"><strong>Jugabilidad</strong></a>
+  &nbsp;·&nbsp;
+  <a href="docs/DEPLOYMENT.md"><strong>Despliegue</strong></a>
+  &nbsp;·&nbsp;
+  <a href="docs/QUICKSTART.md"><strong>Documentación</strong></a>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
+  <a href="https://scam.gamefun.world"><img alt="Website" src="https://img.shields.io/badge/website-scam.gamefun.world-f3c848?labelColor=142e30" /></a>
+  <img alt="React" src="https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white&labelColor=20232a" />
+  <img alt="Three.js" src="https://img.shields.io/badge/Three.js-r180-000000?logo=threedotjs&logoColor=white" />
+  <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white" />
+  <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
+</p>
+
+[![Scam With Your Friends — Web: vista previa del juego](docs/media/trailer-preview.gif)](https://scam.gamefun.world)
+
+</div>
+
+Scam With Your Friends — Web es un juego de navegador gratuito y no oficial, además de un proyecto de código abierto: un **simulador de trabajo cooperativo en línea** ambientado en un **centro de llamadas** ficticio y caótico. Camina hasta tu escritorio, contesta a **llamantes de IA** que reaccionan a lo que dices (escrito, o hablado con **control por voz** donde tu navegador lo admita) y completa tareas de escritorio para ganar dinero dentro del juego. Corre contra el reloj en un bucle de **gestión del tiempo** con **cuota diaria**, esquiva accidentes de oficina y afronta la **evaluación de desempeño** del jefe. Es un **juego de fiesta de comedia negra** para hasta cuatro amigos. Todo es ficticio; nunca introduzcas datos de pago reales.
+
+![Scam With Your Friends — Web: resumen](docs/media/cover.svg)
+
+## Por qué jugar
+
+- **Cooperativo en línea para hasta cuatro** — compartid el día y la cuota, cada uno con sus propias llamadas, con voz de equipo por proximidad.
+- **Llamantes de IA** — ocho personalidades ficticias; las respuestas sin conexión con guion funcionan sin ninguna clave, y hay IA opcional para conversar libremente.
+- **Gestión del tiempo bajo presión** — siete días, cuotas diarias crecientes, una tienda con mejoras y entregas que recoger.
+- **Caos de oficina** — accidentes de virus, apagón, incendio y redada rompen la rutina.
+- **Tono de comedia negra** — escenarios absurdos y ficticios y un jefe implacable; no se recopila nada real.
+- **Sin instalar nada** — funciona en el navegador; cinco idiomas de interfaz; autoalójalo en Cloudflare para experimentar con el plan gratuito.
+
+## Mira el tráiler
+
+https://github.com/user-attachments/assets/4c90325b-0fb6-4102-877f-55c378ca5371
+
+**[▶ Inglés · 1080p con sonido](docs/media/trailer-en.mp4)** · **[▶ Versión con subtítulos en chino](docs/media/trailer-zh-CN.mp4)** · [Póster](docs/media/trailer-poster.jpg) · [Banda sonora original](docs/media/trailer-score.mp3)
+
+Animación cinematográfica creada con la oficina, los personajes y los retratos de este proyecto, con música original. Los diálogos y la acción están escenificados para el tráiler. [Storyboard y renderizado](marketing/trailer/README.md).
+
+**[Juega a la demo alojada → https://scam.gamefun.world](https://scam.gamefun.world)** — inicio de sesión con Google o correo verificado en la demo; **el código fuente viene por defecto sin cuentas**.
+
+Este es un proyecto experimental y no oficial inspirado en [Scam With Your Friends](https://store.steampowered.com/app/4954910/) de Steam. No es el juego original ni un port oficial, y no está afiliado a sus desarrolladores. Consulta [procedencia y licencias](THIRD_PARTY_NOTICES.md). Todos los ID de tarea, tarjetas, fondos y eventos son ficticios. **No introduzcas datos de pago reales.**
+
+## Cómo jugar
+
+1. **Siéntate en tu escritorio** — WASD para moverte, **E** para sentarte. En el móvil hay controles en pantalla.
+2. **Contesta la llamada** — lee al llamante de IA, gestiona la confianza y la paciencia; usa los botones de respuesta sin conexión, o el diálogo con IA y la voz (opcionales).
+3. **Completa la tarea de escritorio** — termina los pasos de verificación para ganar dinero en el juego (nunca uses datos reales de tarjeta).
+4. **Compra y recoge las entregas** — las mejoras de software se instalan al instante; los objetos físicos hay que recogerlos en la oficina.
+5. **Alcanza la cuota diaria** antes de que acabe el temporizador del turno y supera la evaluación de desempeño — si fallas, la partida termina. Cooperativo: hasta cuatro jugadores comparten el día; **V** para la voz de equipo.
+
+Reglas completas: [Guía de jugabilidad](docs/GAMEPLAY-ES.md) — bucle de ronda, controles, llamadas y confianza, herramientas, dinero, objetos de la tienda, accidentes, voz cooperativa y notas de audio. También disponible en: [English](docs/GAMEPLAY-EN.md) · [简体中文](docs/GAMEPLAY.md) · [Português](docs/GAMEPLAY-PT.md) · [日本語](docs/GAMEPLAY-JA.md).
+
+## Capturas de pantalla
+
+[![Mural de capturas: oficina, mesa de llamadas y menú principal](docs/media/screenshot-wall.png)](https://scam.gamefun.world)
+
+| Oficina en Three.js | Mesa de llamadas entrantes | Menú principal |
+| --- | --- | --- |
+| Camina, siéntate, compra y recoge entregas | Habla con llamantes de IA y completa la tarea | Solitario, código de sala cooperativa, ajustes |
+
+Capturadas de esta implementación con una cuenta de prueba sintética y diálogo sin conexión — no son imágenes del juego original. Capturas individuales: [oficina](docs/media/office.png), [escritorio](docs/media/desktop.png), [menú](docs/media/menu.png).
+
+## Características
+
+| Sistema | Implementación |
+| --- | --- |
+| Oficina | Sala procedural en Three.js, movimiento, interacción, equipo y animación sentado |
+| Llamadas | Ocho perfiles de llamantes de IA, confianza/paciencia, respuestas sin conexión con guion, diálogo con IA opcional |
+| Semana laboral | Siete días, temporizadores de cuota diaria, tienda, recogida de entregas, inventario, accidentes y evaluación de desempeño |
+| Voz | Control por voz mediante reconocimiento de voz donde se admita, chat de voz de equipo, TTS opcional con MiniMax o ElevenLabs |
+| Cooperativo | Cooperativo en línea para hasta cuatro jugadores, estado por WebSocket, día/cuota compartidos y voz WebRTC |
+| Cuentas | Opcional; desactivadas por defecto. Google o correo/contraseña verificado mediante Resend |
+| Partidas guardadas | Partidas de cuenta en D1, detección de conflictos de revisión y recuperación/exportación local |
+| Idiomas | Inglés, chino, portugués, japonés, español |
+
+## Inicio rápido — sin cuentas
+
+```sh
+git clone https://github.com/mrzh7/scam-with-your-friends-web.git
+cd scam-with-your-friends-web
+npm ci
+cp .dev.vars.example .dev.vars   # PowerShell: Copy-Item .dev.vars.example .dev.vars
+npm run dev
+```
+
+Abre **http://localhost:5173**. No se necesita inicio de sesión en Cloudflare, OAuth ni servicio de correo. Deja vacía la clave de IA para jugar sin conexión con respuestas con guion.
+
+IA opcional en `.dev.vars`:
+
+```dotenv
+ACCOUNTS_ENABLED=false
+AI_BASE_URL=https://api.deepseek.com
+AI_MODEL=deepseek-v4-flash
+AI_API_KEY=your-own-provider-key
+```
+
+El progreso es por navegador mediante una cookie anónima. Exporta copias de seguridad antes de borrar las cookies. Detalles: [guía local](docs/QUICKSTART.md).
+
+## Despliegue en Cloudflare
+
+Establece **`ACCOUNTS_ENABLED=true`** cuando quieras inicio de sesión, crea tu propia base de datos D1, configura al menos un método de autenticación y sigue **[DEPLOYMENT.md](docs/DEPLOYMENT.md)**. Workers + Static Assets + D1 + Durable Objects — no es una app Pages solo estática. Nunca se incluyen credenciales de proveedores; las API de pago pueden cobrar aunque el código sea gratuito.
+
+## Arquitectura
+
+```mermaid
+flowchart LR
+  UI[React desktop + Three.js office] --> Worker[Cloudflare Worker API]
+  Worker --> D1[(D1 accounts and saves)]
+  Worker --> DO[Durable Object room]
+  DO <-->|WebSocket| UI
+  Worker --> AI[Optional dialogue provider]
+  Worker --> TTS[Optional speech provider]
+  Worker --> Auth[Google / Resend]
+  UI <-->|WebRTC| Peers[Other players]
+```
+
+`src/game/` — reglas compartidas, diálogo, partidas guardadas, transportes del navegador. `worker/` — autenticación, API, proveedores, autoridad de la sala. `migrations/` — esquema de D1.
+
+## Desarrollo
+
+```sh
+npm run check          # Public-tree checks, i18n, tests, TypeScript and production build
+npm test
+npm run check:i18n
+```
+
+Consulta las [notas de aceptación](docs/ACCEPTANCE.md), [SECURITY.md](SECURITY.md) y el [flujo de datos](docs/PRIVACY.md). Límites conocidos: WebGL y voz varían en el móvil; no hay sistema de pagos; las partidas en solitario enviadas por el cliente no sirven para recompensas con dinero real.
+
+## Contribuir
+
+Áreas útiles: compatibilidad móvil, traducciones naturales, accesibilidad y reconexión de voz fiable. Consulta [CONTRIBUTING.md](CONTRIBUTING.md). Problemas de seguridad: [SECURITY.md](SECURITY.md).
+
+<div align="center">
+
+### Star · Comparte · Contribuye
+
+Si te gusta, da una **[estrella al repositorio](https://github.com/mrzh7/scam-with-your-friends-web)**, **[juega a la demo](https://scam.gamefun.world)** con tus amigos y compártela, o abre un issue o pull request.
+
+</div>
+
+El código propio del proyecto es [MIT](LICENSE). Los nombres de terceros, las obras de referencia y las dependencias conservan sus propios derechos — consulta [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

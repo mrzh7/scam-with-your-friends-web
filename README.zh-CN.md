@@ -6,7 +6,7 @@
 
 **接听虚构 AI 来电，和队友语音协作，管理时间，达成每日业绩并撑过绩效考核。**
 
-[English](README.md) · [简体中文](README.zh-CN.md)
+[English](README.md) · **简体中文** · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md)
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ 立即试玩</strong></a>
@@ -66,7 +66,7 @@ https://github.com/user-attachments/assets/5013ead8-cf12-4d1b-89f5-1818df086993
 4. **购物与取货** — 软件立即生效；实体物品需在办公室领取后使用。
 5. **在班次结束前达成每日业绩**并通过绩效考核 — 未达标则本局结束。联机最多四人共享天数；**V** 开启队友语音。
 
-完整规则见 [玩法说明](docs/GAMEPLAY.md)（[English guide](docs/GAMEPLAY-EN.md)）。
+完整规则见 [玩法说明](docs/GAMEPLAY.md)（其他语言：[English](docs/GAMEPLAY-EN.md) · [Português](docs/GAMEPLAY-PT.md) · [Español](docs/GAMEPLAY-ES.md) · [日本語](docs/GAMEPLAY-JA.md)）。
 
 ## 界面预览
 
