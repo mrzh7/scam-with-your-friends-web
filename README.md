@@ -2,7 +2,7 @@
 
 **A browser office game where fictional callers, awkward conversations and a ticking quota collide.**
 
-[简体中文](README.zh-CN.md) · [Gameplay](docs/GAMEPLAY-EN.md) · [Self-hosting](docs/DEPLOYMENT.md) · [Contributing](CONTRIBUTING.md)
+[简体中文](README.zh-CN.md) · [Gameplay](docs/GAMEPLAY-EN.md) · [Local setup](docs/QUICKSTART.md) · [Cloudflare deployment](docs/DEPLOYMENT.md) · [Contributing](CONTRIBUTING.md)
 
 ![Scam With Your Friends — Web overview](docs/media/cover.svg)
 

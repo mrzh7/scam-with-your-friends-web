@@ -2,7 +2,7 @@
 
 **一个可以在浏览器里玩的办公室游戏：接听虚构来电，完成任务，和朋友一起赶在下班前达标。**
 
-[English](README.md) · [完整玩法](docs/GAMEPLAY.md) · [部署指南](docs/DEPLOYMENT.md) · [参与贡献](CONTRIBUTING.md)
+[English](README.md) · [完整玩法](docs/GAMEPLAY.md) · [部署指南](docs/DEPLOYMENT.zh-CN.md) · [参与贡献](CONTRIBUTING.md)
 
 ![项目概览](docs/media/cover.svg)
 
@@ -51,11 +51,11 @@ npm run dev
 
 浏览器打开 **http://localhost:5173** 即可。启动脚本自动初始化本机数据库，**不需要 Cloudflare 账号、Google OAuth 或邮件服务**。不填 AI 密钥也能玩离线剧情。TTS 是独立的可选配置，不必为开始游戏先配置它。
 
-每个浏览器通过匿名会话保存自己的进度；清除 Cookie 前请导出存档。完整安装、换服务商、数据位置和排错见[本机快速开始](docs/QUICKSTART.md)。
+每个浏览器通过匿名会话保存自己的进度；清除 Cookie 前请导出存档。完整安装、换服务商、数据位置和排错见[本机快速开始](docs/QUICKSTART.zh-CN.md)。
 
 ## 方案二：启用账户系统并部署
 
-在部署配置 `wrangler.jsonc` 的 `vars` 中设置 **`ACCOUNTS_ENABLED="true"`**，配置自己的 D1 数据库及至少一种登录方式，再按[详细部署指南](docs/DEPLOYMENT.md)操作。指南包含 Google、邮箱验证、全部环境变量、管理员、AI/TTS 及 GitHub 自动部署。
+在部署配置 `wrangler.jsonc` 的 `vars` 中设置 **`ACCOUNTS_ENABLED="true"`**，配置自己的 D1 数据库及至少一种登录方式，再按[详细部署指南](docs/DEPLOYMENT.zh-CN.md)操作。指南包含 Google、邮箱验证、全部环境变量、管理员、AI/TTS 及 GitHub 自动部署。
 
 切换开关不会删除旧存档，也不会自动把游客存档合并到注册账号；需要时使用导出/导入。线上试玩站现有登录要求不受源码默认值影响。
 
@@ -80,7 +80,7 @@ npm run dev
 
 采用 React + TypeScript + Vite + Three.js，后端是 Cloudflare Workers、D1 和 Durable Objects。**不能只上传静态文件到 Pages 就获得完整功能。**
 
-[部署指南](docs/DEPLOYMENT.md) 包含创建数据库、迁移、Google 回调、邮件域名验证、AI/TTS 独立密钥、管理员设置及 GitHub 自动部署。启用账户系统时需配置至少一种登录方法。公开源码不包含运营方数据库、用户信息、生产 ID 或服务凭据。微信入口隐藏，服务端适配代码保留供以后配置。
+[部署指南](docs/DEPLOYMENT.zh-CN.md) 包含创建数据库、迁移、Google 回调、邮件域名验证、AI/TTS 独立密钥、管理员设置及 GitHub 自动部署。启用账户系统时需配置至少一种登录方法。公开源码不包含运营方数据库、用户信息、生产 ID 或服务凭据。微信入口隐藏，服务端适配代码保留供以后配置。
 
 ## 验证与限制
 
