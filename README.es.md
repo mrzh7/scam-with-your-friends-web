@@ -216,7 +216,7 @@ Consulta las [notas de aceptación](docs/ACCEPTANCE.md), [SECURITY.md](SECURITY.
 
 ## Historial de Stars
 
-<a href="https://www.star-history.com/#mrzh7/scam-with-your-friends-web&Date"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /></picture></a>
+<a href="https://www.star-history.com/?type=date&amp;repos=mrzh7%2Fscam-with-your-friends-web"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/media/star-history-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="docs/media/star-history-light.svg" /><img alt="Star History Chart" src="docs/media/star-history-light.svg" /></picture></a>
 
 <div align="center">
 
