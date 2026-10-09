@@ -8,6 +8,14 @@
 
 这是受《Scam With Your Friends》启发的非官方网页实验，不是原作，也不是官方移植。项目包含自行编写的游戏规则、程序化场景和七天关卡。原作截图、字幕、网页存档不随公开源码发布；公开可见不代表拥有再分发许可，见 [素材来源与许可证](THIRD_PARTY_NOTICES.md)。游戏里的卡片、任务编号和钱均为虚构，请勿输入真实支付资料。
 
+## 宣传动画
+
+[![观看 48 秒宣传动画](docs/media/trailer-preview.gif)](docs/media/trailer-zh-CN.mp4)
+
+**[▶ 中文字幕版 · 1080p，含音乐与音效](docs/media/trailer-zh-CN.mp4)** · **[▶ English 原版](docs/media/trailer-en.mp4)** · [宣传海报](docs/media/trailer-poster.jpg) · [原创配乐](docs/media/trailer-score.mp3)
+
+使用本项目的办公室、角色和头像制作的电影式宣传动画，配有原创音乐及音效。镜头、对话和动作经过编排，不是未经剪辑的实机录像。[分镜、素材来源与制作源码](marketing/trailer/README.md)。
+
 ## 在线试玩
 
 试玩使用维护者的 Cloudflare 部署，发布前补上正式 URL。进入游戏需要 Google 登录或完成邮箱验证；请只使用游戏生成的虚构资料。线上配置可能与自行部署的版本不同。

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scam With Your Friends — Web · Trailer</title>
+  <style>
+    @font-face{font-family:Display;src:url('./fonts/display.woff2')}@font-face{font-family:Body;src:url('./fonts/body.woff2')}
+    *{box-sizing:border-box}body{margin:0;background:#071c21;color:#f3efdd;font-family:Body,system-ui,sans-serif;padding:44px max(24px,calc((100vw - 1480px)/2)) 72px;background-image:radial-gradient(ellipse at 80% 0%,#2a4b46,transparent 60%)}
+    header{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px}h1{font:clamp(36px,4vw,66px)/1.1 Display,sans-serif;letter-spacing:.3px;margin:10px 0 0}h1 span{color:#f5c94e}p{color:#a7c6c0;font-size:14px;line-height:1.7}small{color:#70d6b9;letter-spacing:3px}video{display:block;width:100%;aspect-ratio:16/9;background:#030d10;border-radius:9px;box-shadow:0 26px 100px #0008;border:1px solid #72b0a338}
+    nav{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}a,button{font:14px Body,system-ui;text-decoration:none;color:#f3efdd;background:#20403f;border:1px solid #6a9b8455;border-radius:6px;padding:13px 19px;cursor:pointer}button[aria-pressed=true]{background:#f5c94e;color:#071c21;border-color:#f5c94e}a:hover,button:hover{filter:brightness(1.15)}.foot{display:flex;justify-content:space-between;gap:32px}.foot p{max-width:710px}@media(max-width:700px){header,.foot{display:block}body{padding-top:26px}}
+  </style>
+</head>
+<body>
+  <header><div><small>THE CINEMATIC TRAILER</small><h1>SCAM WITH YOUR FRIENDS <span>— WEB</span></h1></div><p>48 seconds · 1080p · Original music + sound design</p></header>
+  <video id="film" controls playsinline preload="metadata" poster="../../docs/media/trailer-poster.jpg" src="../../docs/media/trailer-en.mp4"></video>
+  <nav aria-label="Film versions"><button data-lang="en" aria-pressed="true">English original</button><button data-lang="zh-CN" aria-pressed="false">中文字幕版</button><a id="download" href="../../docs/media/trailer-en.mp4" download>Download MP4</a><a href="../../docs/media/trailer-score.mp3" download>Original soundtrack</a><a href="https://github.com/mrzh7/scam-with-your-friends-web">GitHub repository ↗</a></nav>
+  <div class="foot"><p>A normal day. Eight unpredictable callers. Four friends with one terrible plan.<br>Clock in. Make quota. Try to keep your job.</p><p>Scripted promotional animation of an unofficial web project.<br>Not affiliated with the creators of the original game.</p></div>
+  <script>const film=document.querySelector('#film');document.querySelectorAll('[data-lang]').forEach(button=>button.addEventListener('click',()=>{const time=film.currentTime;const playing=!film.paused;film.src='../../docs/media/trailer-'+button.dataset.lang+'.mp4';document.querySelector('#download').href=film.src;film.addEventListener('loadedmetadata',()=>{film.currentTime=time;if(playing)film.play().catch(()=>{});},{once:true});document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));}));</script>
+</body>
+</html>

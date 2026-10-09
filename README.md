@@ -10,6 +10,14 @@ Walk to your desk, answer calls, complete fictional verification tasks, buy equi
 
 This is an experimental, unofficial project inspired by [Scam With Your Friends](https://store.steampowered.com/app/4954910/). It is not the original game or an official port. See [provenance and licenses](THIRD_PARTY_NOTICES.md). All task IDs, cards, funds and events are fictional. Do not enter real payment details.
 
+## Watch the trailer
+
+[![Watch the 48-second trailer](docs/media/trailer-preview.gif)](docs/media/trailer-en.mp4)
+
+**[▶ English · 1080p with sound](docs/media/trailer-en.mp4)** · **[▶ 中文字幕版](docs/media/trailer-zh-CN.mp4)** · [Poster](docs/media/trailer-poster.jpg) · [Original soundtrack](docs/media/trailer-score.mp3)
+
+A cinematic animation made with this project's office, characters and portraits, with original music and sound effects. The dialogue and action are staged for the trailer. [Storyboard, sources and rendering instructions](marketing/trailer/README.md).
+
 ## Play online
 
 The maintained Cloudflare deployment is the playable demo. Its URL will be added before publication. Google login or verified email registration is required; use only fictional game data during play. The hosted deployment may have different operator configuration from a self-hosted fork.

@@ -15,3 +15,9 @@ The screenshots in docs/media are captures of this implementation with a synthet
 Dependencies retain their own licenses. The lockfile fixes installed versions; do not replace their notices with the project's MIT license. See [DEPENDENCIES.md](docs/DEPENDENCIES.md) for an inventory of the installed packages, and each package's LICENSE/NOTICE files for the controlling terms. Lucide icons use the ISC license. React and Three.js use MIT; jose uses MIT. Cloudflare, Google, Resend, MiniMax, ElevenLabs and other providers have separate service terms and costs.
 
 Before adding any image, font, audio clip or model, record its source, author, exact license and required attribution here. For media with no clear redistribution license, link to the source instead of committing a copy.
+
+## Promotional trailer
+
+The 48-second trailer and its derivatives in `docs/media/trailer-*` are scripted animation of this web project, built from the procedural office, avatar rigs, SVG caller portraits and newly authored graphics. The picture includes no downloaded original-game footage. Music and effects are synthesized by the original composition in `marketing/trailer/score.py`, with no sampled recordings or cloned voices.
+
+The trailer uses unmodified Fontsource subsets of Bebas Neue, Barlow Condensed and DM Sans under SIL Open Font License 1.1. Their provenance and full notices are retained in [`marketing/trailer/fonts/`](marketing/trailer/fonts/README.md). The Chinese-caption export uses an installed CJK font; no proprietary system font files are distributed. Existing limitations concerning original-game names, marks and protected visual expression also apply to the trailer.
