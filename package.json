@@ -22,7 +22,7 @@
     "lucide-react": "^0.468.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "three": "^0.180.0"
+    "three": "^0.186.1"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.13.7",
