@@ -167,6 +167,30 @@ Consulta las [notas de aceptación](docs/ACCEPTANCE.md), [SECURITY.md](SECURITY.
 
 Áreas útiles: compatibilidad móvil, traducciones naturales, accesibilidad y reconexión de voz fiable. Consulta [CONTRIBUTING.md](CONTRIBUTING.md). Problemas de seguridad: [SECURITY.md](SECURITY.md).
 
+## Invítame a un café ☕
+
+<p align="center">Si el proyecto te hizo reír, puedes invitarme a un café. La propina es **voluntaria**: sin ventajas ni reembolsos. Proyecto de fans no oficial, sin relación con el juego original.</p>
+
+<table align="center"><tr>
+<td align="center" width="33%">
+<a href="docs/donate/eth-qr.png"><img src="docs/donate/eth-qr.png" width="160" alt="ETH QR code"/></a><br/>
+<b>ETH</b><br/><sub>Ethereum mainnet (la misma dirección sirve en redes EVM — confirma la red antes de enviar)</sub><br/>
+<code>0xca3E579dA2a88638AfdD8FE76bFB0CF938E73f61</code>
+</td>
+<td align="center" width="33%">
+<a href="docs/donate/btc-qr.png"><img src="docs/donate/btc-qr.png" width="160" alt="BTC QR code"/></a><br/>
+<b>BTC</b><br/><sub>Bitcoin</sub><br/>
+<code>bc1qkmfm4clql6n3f086v69weld77rsa49wkkd267h</code>
+</td>
+<td align="center" width="33%">
+<a href="docs/donate/bnb-qr.png"><img src="docs/donate/bnb-qr.png" width="160" alt="BNB QR code"/></a><br/>
+<b>BNB</b><br/><sub>solo BNB Smart Chain (BEP20)</sub><br/>
+<code>0xca3E579dA2a88638AfdD8FE76bFB0CF938E73f61</code>
+</td>
+</tr></table>
+
+<p align="center">⚠️ Las direcciones son válidas **solo tal como aparecen en este README**. Nunca enviaré una dirección nueva por mensaje privado. Revisa el inicio y el final antes de enviar.</p>
+
 ## Historial de Stars
 
 <a href="https://www.star-history.com/#mrzh7/scam-with-your-friends-web&Date"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /></picture></a>

@@ -167,6 +167,30 @@ Encontrou um bug ou tem uma ideia? Conte para a gente:
 
 Áreas úteis: compatibilidade com celulares, traduções naturais, acessibilidade e reconexão de voz confiável. Veja o [CONTRIBUTING.md](CONTRIBUTING.md). Problemas de segurança: [SECURITY.md](SECURITY.md).
 
+## Me pague um café ☕
+
+<p align="center">Se o projeto te divertiu, você pode me pagar um café. A gorjeta é **voluntária**: sem vantagens e sem reembolso. Projeto de fã não oficial, sem vínculo com o jogo original.</p>
+
+<table align="center"><tr>
+<td align="center" width="33%">
+<a href="docs/donate/eth-qr.png"><img src="docs/donate/eth-qr.png" width="160" alt="ETH QR code"/></a><br/>
+<b>ETH</b><br/><sub>Ethereum mainnet (o mesmo endereço funciona em redes EVM — confirme a rede antes de enviar)</sub><br/>
+<code>0xca3E579dA2a88638AfdD8FE76bFB0CF938E73f61</code>
+</td>
+<td align="center" width="33%">
+<a href="docs/donate/btc-qr.png"><img src="docs/donate/btc-qr.png" width="160" alt="BTC QR code"/></a><br/>
+<b>BTC</b><br/><sub>Bitcoin</sub><br/>
+<code>bc1qkmfm4clql6n3f086v69weld77rsa49wkkd267h</code>
+</td>
+<td align="center" width="33%">
+<a href="docs/donate/bnb-qr.png"><img src="docs/donate/bnb-qr.png" width="160" alt="BNB QR code"/></a><br/>
+<b>BNB</b><br/><sub>somente BNB Smart Chain (BEP20)</sub><br/>
+<code>0xca3E579dA2a88638AfdD8FE76bFB0CF938E73f61</code>
+</td>
+</tr></table>
+
+<p align="center">⚠️ Os endereços valem **somente como escritos neste README**. Nunca enviarei um novo endereço por mensagem privada. Confira o início e o fim do endereço antes de enviar.</p>
+
 ## Histórico de Stars
 
 <a href="https://www.star-history.com/#mrzh7/scam-with-your-friends-web&Date"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /></picture></a>

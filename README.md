@@ -167,6 +167,30 @@ Found a bug or have an idea? Tell us:
 
 Useful areas: mobile compatibility, natural translations, accessibility and reliable voice reconnection. See [CONTRIBUTING.md](CONTRIBUTING.md). Security issues: [SECURITY.md](SECURITY.md).
 
+## Buy me a coffee
+
+<p align="center">If this project made you laugh, you can buy me a coffee. Tips are **voluntary**: no perks, no refunds. This is an unofficial fan project, not affiliated with the original game.</p>
+
+<table align="center"><tr>
+<td align="center" width="33%">
+<a href="docs/donate/eth-qr.png"><img src="docs/donate/eth-qr.png" width="160" alt="ETH QR code"/></a><br/>
+<b>ETH</b><br/><sub>Ethereum mainnet (same address works on EVM chains — confirm the chain before sending)</sub><br/>
+<code>0xca3E579dA2a88638AfdD8FE76bFB0CF938E73f61</code>
+</td>
+<td align="center" width="33%">
+<a href="docs/donate/btc-qr.png"><img src="docs/donate/btc-qr.png" width="160" alt="BTC QR code"/></a><br/>
+<b>BTC</b><br/><sub>Bitcoin</sub><br/>
+<code>bc1qkmfm4clql6n3f086v69weld77rsa49wkkd267h</code>
+</td>
+<td align="center" width="33%">
+<a href="docs/donate/bnb-qr.png"><img src="docs/donate/bnb-qr.png" width="160" alt="BNB QR code"/></a><br/>
+<b>BNB</b><br/><sub>BNB Smart Chain (BEP20) only</sub><br/>
+<code>0xca3E579dA2a88638AfdD8FE76bFB0CF938E73f61</code>
+</td>
+</tr></table>
+
+<p align="center">⚠️ Addresses are valid **only as written in this README**. I will never DM you a new address. Double-check the first and last characters before sending.</p>
+
 ## Star History
 
 <a href="https://www.star-history.com/#mrzh7/scam-with-your-friends-web&Date"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /></picture></a>

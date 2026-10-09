@@ -167,6 +167,30 @@ npm run check:i18n
 
 歓迎する分野: モバイル対応、自然な翻訳、アクセシビリティ、安定したボイス再接続。[CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。セキュリティ上の問題: [SECURITY.md](SECURITY.md)。
 
+## コーヒーをおごる ☕
+
+<p align="center">このプロジェクトで楽しめたら、コーヒー1杯おごってください。投げ銭は**完全に任意**で、特典も返金もありません。非公式のファンプロジェクトで、原作ゲームとは無関係です。</p>
+
+<table align="center"><tr>
+<td align="center" width="33%">
+<a href="docs/donate/eth-qr.png"><img src="docs/donate/eth-qr.png" width="160" alt="ETH QR code"/></a><br/>
+<b>ETH</b><br/><sub>Ethereum メインネット（同じアドレスは EVM チェーンでも使えます。送金前にチェーンを確認）</sub><br/>
+<code>0xca3E579dA2a88638AfdD8FE76bFB0CF938E73f61</code>
+</td>
+<td align="center" width="33%">
+<a href="docs/donate/btc-qr.png"><img src="docs/donate/btc-qr.png" width="160" alt="BTC QR code"/></a><br/>
+<b>BTC</b><br/><sub>ビットコイン</sub><br/>
+<code>bc1qkmfm4clql6n3f086v69weld77rsa49wkkd267h</code>
+</td>
+<td align="center" width="33%">
+<a href="docs/donate/bnb-qr.png"><img src="docs/donate/bnb-qr.png" width="160" alt="BNB QR code"/></a><br/>
+<b>BNB</b><br/><sub>BNB Smart Chain（BEP20）のみ</sub><br/>
+<code>0xca3E579dA2a88638AfdD8FE76bFB0CF938E73f61</code>
+</td>
+</tr></table>
+
+<p align="center">⚠️ アドレスは**この README に記載のものだけ**が有効です。新しいアドレスを DM で送ることはありません。送金前に先頭と末尾を確認してください。</p>
+
 ## Star 履歴
 
 <a href="https://www.star-history.com/#mrzh7/scam-with-your-friends-web&Date"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /></picture></a>
