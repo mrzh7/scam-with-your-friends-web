@@ -27,6 +27,7 @@
   <img alt="Three.js" src="https://img.shields.io/badge/Three.js-r180-000000?logo=threedotjs&logoColor=white" />
   <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white" />
   <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
+  <a href="https://x.com/mr_zh7"><img alt="X @mr_zh7" src="https://img.shields.io/badge/X-@mr__zh7-000000?logo=x&logoColor=white" /></a>
 </p>
 
 <!-- Ranking badges (uncomment when live — do not leave broken images):
@@ -160,6 +161,7 @@ npm run check:i18n
 - [機能をリクエスト](https://github.com/mrzh7/scam-with-your-friends-web/issues/new?template=feature_request.yml)
 - [ディスカッション（質問・アイデア）](https://github.com/mrzh7/scam-with-your-friends-web/discussions)
 - [セキュリティポリシー](SECURITY.md)
+- 連絡: X [@mr_zh7](https://x.com/mr_zh7)
 
 ## コントリビューション
 
@@ -173,7 +175,7 @@ npm run check:i18n
 
 ### Star · シェア · コントリビュート
 
-気に入ったら、**[リポジトリに Star](https://github.com/mrzh7/scam-with-your-friends-web)** を付け、友達と**[デモをプレイ](https://scam.gamefun.world)**して広めたり、issue や pull request を送ってください。
+気に入ったら、**[リポジトリに Star](https://github.com/mrzh7/scam-with-your-friends-web)** を付け、友達と**[デモをプレイ](https://scam.gamefun.world)**して広めたり、**[X でフォロー](https://x.com/mr_zh7)**したり、issue や pull request を送ってください。
 
 </div>
 

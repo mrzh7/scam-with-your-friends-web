@@ -27,6 +27,7 @@
   <img alt="Three.js" src="https://img.shields.io/badge/Three.js-r180-000000?logo=threedotjs&logoColor=white" />
   <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white" />
   <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
+  <a href="https://x.com/mr_zh7"><img alt="X @mr_zh7" src="https://img.shields.io/badge/X-@mr__zh7-000000?logo=x&logoColor=white" /></a>
 </p>
 
 <!-- Ranking badges (uncomment when live — do not leave broken images):
@@ -160,6 +161,7 @@ Found a bug or have an idea? Tell us:
 - [Request a feature](https://github.com/mrzh7/scam-with-your-friends-web/issues/new?template=feature_request.yml)
 - [Discussions (Q&A, ideas)](https://github.com/mrzh7/scam-with-your-friends-web/discussions)
 - [Security policy](SECURITY.md)
+- Contact: X [@mr_zh7](https://x.com/mr_zh7)
 
 ## Contributing
 
@@ -173,7 +175,7 @@ Useful areas: mobile compatibility, natural translations, accessibility and reli
 
 ### Star · Share · Contribute
 
-If you enjoy it, **[star the repo](https://github.com/mrzh7/scam-with-your-friends-web)**, **[play the demo](https://scam.gamefun.world)** with friends and share it, or open an issue or pull request.
+If you enjoy it, **[star the repo](https://github.com/mrzh7/scam-with-your-friends-web)**, **[play the demo](https://scam.gamefun.world)** with friends and share it, **[follow on X](https://x.com/mr_zh7)**, or open an issue or pull request.
 
 </div>
 
