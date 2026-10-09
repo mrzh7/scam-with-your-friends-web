@@ -37,7 +37,7 @@
   <a href="https://www.star-history.com/mrzh7/scam-with-your-friends-web"><img src="https://api.star-history.com/badge?repo=mrzh7/scam-with-your-friends-web" alt="Star History Rank" height="55"/></a>
 -->
 
-[![游戏玩法预览](docs/media/trailer-preview.gif)](https://scam.gamefun.world)
+[![游戏玩法预览](docs/media/trailer-preview.gif)](docs/media/trailer-preview.gif)
 
 </div>
 
@@ -47,7 +47,7 @@
 
 ## 界面预览
 
-[![截图墙：办公室、来电桌面、主菜单](docs/media/screenshot-wall.png)](https://scam.gamefun.world)
+[![截图墙：办公室、来电桌面、主菜单](docs/media/screenshot-wall.png)](docs/media/screenshot-wall.png)
 
 | Three.js 办公室 | 来电桌面 | 主菜单 |
 | --- | --- | --- |

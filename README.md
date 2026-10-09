@@ -37,7 +37,7 @@
   <a href="https://www.star-history.com/mrzh7/scam-with-your-friends-web"><img src="https://api.star-history.com/badge?repo=mrzh7/scam-with-your-friends-web" alt="Star History Rank" height="55"/></a>
 -->
 
-[![Scam With Your Friends — Web gameplay preview](docs/media/trailer-preview.gif)](https://scam.gamefun.world)
+[![Scam With Your Friends — Web gameplay preview](docs/media/trailer-preview.gif)](docs/media/trailer-preview.gif)
 
 </div>
 
@@ -47,7 +47,7 @@ Scam With Your Friends — Web is an unofficial, free browser game and open-sour
 
 ## Screenshots
 
-[![Screenshot wall: office, call desk and main menu](docs/media/screenshot-wall.png)](https://scam.gamefun.world)
+[![Screenshot wall: office, call desk and main menu](docs/media/screenshot-wall.png)](docs/media/screenshot-wall.png)
 
 | Three.js office | Incoming call desk | Main menu |
 | --- | --- | --- |

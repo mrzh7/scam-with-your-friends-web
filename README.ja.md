@@ -37,7 +37,7 @@
   <a href="https://www.star-history.com/mrzh7/scam-with-your-friends-web"><img src="https://api.star-history.com/badge?repo=mrzh7/scam-with-your-friends-web" alt="Star History Rank" height="55"/></a>
 -->
 
-[![Scam With Your Friends — Web のゲームプレイプレビュー](docs/media/trailer-preview.gif)](https://scam.gamefun.world)
+[![Scam With Your Friends — Web のゲームプレイプレビュー](docs/media/trailer-preview.gif)](docs/media/trailer-preview.gif)
 
 </div>
 
@@ -47,7 +47,7 @@ Scam With Your Friends — Web は、非公式の無料ブラウザーゲーム�
 
 ## スクリーンショット
 
-[![スクリーンショットウォール: オフィス、通話デスク、メインメニュー](docs/media/screenshot-wall.png)](https://scam.gamefun.world)
+[![スクリーンショットウォール: オフィス、通話デスク、メインメニュー](docs/media/screenshot-wall.png)](docs/media/screenshot-wall.png)
 
 | Three.js のオフィス | 着信デスク | メインメニュー |
 | --- | --- | --- |
