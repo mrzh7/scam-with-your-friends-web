@@ -1,0 +1,18 @@
+name: Bug report
+description: Report a reproducible problem (never include secrets or login links).
+body:
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected result, actual result
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser, device, Node version, and commit
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted logs or screenshots
+      description: Remove API keys, session cookies, email addresses, and verification links.

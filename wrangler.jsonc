@@ -1,0 +1,45 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "scam-with-your-friends-web",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-04",
+  "assets": {
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": [
+      "/api/*",
+      "/admin",
+      "/admin/*"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "scam-with-your-friends-web-db",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "ROOMS",
+        "class_name": "OfficeRoom"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "OfficeRoom"
+      ]
+    }
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "workers_dev": true,
+  "preview_urls": false,
+  "vars": {}
+}

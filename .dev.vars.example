@@ -1,0 +1,42 @@
+# Copy to .dev.vars. Never commit real secrets.
+# Default provider is OpenRouter; the model must support JSON schema outputs.
+OPENROUTER_API_KEY=
+AI_MODEL=
+# Optional OpenAI-compatible provider overrides:
+# AI_BASE_URL=https://your-provider.example/v1
+# AI_API_KEY=
+# Cloudflare Realtime TURN; optional for LAN, required for reliable NAT traversal.
+TURN_KEY_ID=
+TURN_API_TOKEN=
+
+# Optional natural caller speech. Separate from the DeepSeek/dialogue key.
+# Configure through the authenticated site administrator or Worker secrets.
+# TTS_PROVIDER=minimax
+# TTS_API_KEY=
+# TTS_MODEL=speech-2.8-turbo
+# TTS_BASE_URL=https://api.minimax.cn/v1
+# TTS_VOICE=
+# TTS_VOICES='["","","","","","","",""]'
+# ElevenLabs alternative: TTS_PROVIDER=elevenlabs, TTS_MODEL=eleven_flash_v2_5
+# TTS_VOICE=<voice ID from your ElevenLabs voice library>
+
+# Google OpenID Connect / WeChat Open Platform website QR login.
+# Server only. Configure approved apps and callback URLs; see docs/AUTH.md.
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+WECHAT_APP_ID=
+WECHAT_APP_SECRET=
+# Production canonical HTTPS origin; no path. Omit for local auto-detection.
+# AUTH_ORIGIN=https://game.example.com
+
+# Random 32-byte Base64 AES-GCM key for encrypted administrator settings.
+# Generate once, keep private, and preserve when redeploying. See docs/I18N-ADMIN.md.
+SITE_SETTINGS_KEY=
+
+# Transactional email verification (Resend). Server-only credentials.
+# RESEND_API_KEY=
+# EMAIL_FROM=Kolkata OS <noreply@game.example.com>
+# AUTH_ORIGIN=https://game.example.com
+
+# Required for administrator access; only this verified Google identity is accepted.
+ADMIN_EMAIL=

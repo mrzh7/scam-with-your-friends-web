@@ -1,0 +1,13 @@
+name: Feature request
+description: Propose a specific improvement.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Suggested approach and alternatives

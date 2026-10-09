@@ -1,0 +1,47 @@
+{
+  "name": "scam-with-your-friends-web",
+  "private": true,
+  "version": "0.3.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "tsc --noEmit && node scripts/dev.mjs build",
+    "preview": "node scripts/dev.mjs preview",
+    "test": "vitest run",
+    "deploy": "npm run build && npm run deploy:ci",
+    "deploy:ci": "npm run db:remote && wrangler deploy",
+    "db:local": "wrangler d1 migrations apply DB --local --config wrangler.jsonc",
+    "db:remote": "wrangler d1 migrations apply DB --remote --config wrangler.jsonc",
+    "test:api": "node scripts/smoke-api.mjs",
+    "check:i18n": "node scripts/check-i18n.mjs",
+    "check:public": "node scripts/check-public.mjs",
+    "check": "npm run check:public && npm run check:i18n && npm test && npm run build"
+  },
+  "dependencies": {
+    "jose": "^6.2.12",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.13.7",
+    "@cloudflare/workers-types": "^5.20261004.1",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.180.0",
+    "@types/ws": "^8.18.2",
+    "@vitejs/plugin-react": "^5.0.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "vitest": "^4.1.11",
+    "wrangler": "^4.43.0",
+    "ws": "^8.22.0"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  }
+}
