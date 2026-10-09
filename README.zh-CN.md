@@ -214,7 +214,7 @@ npm run check:i18n
 
 ## Star 历史
 
-<a href="https://www.star-history.com/?type=date&amp;repos=mrzh7%2Fscam-with-your-friends-web"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/media/star-history-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="docs/media/star-history-light.svg" /><img alt="Star History Chart" src="docs/media/star-history-light.svg" /></picture></a>
+<a href="https://www.star-history.com/?type=date&amp;repos=mrzh7%2Fscam-with-your-friends-web"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mrzh7/scam-with-your-friends-web/star-history/star-history-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mrzh7/scam-with-your-friends-web/star-history/star-history-light.svg" /><img alt="Star History Chart" src="https://raw.githubusercontent.com/mrzh7/scam-with-your-friends-web/star-history/star-history-light.svg" /></picture></a>
 
 <div align="center">
 
