@@ -26,7 +26,11 @@ export default {
    if (path === '/api/admin/settings') return adminSettings(request,env);
    if (path === '/api/config' || path === '/api/dialogue' || path === '/api/speech' || path === '/api/ai/test') env = await runtimeEnv(env);
    const withAccounts = accountsEnabled(env);
-   if (path === '/api/session/anonymous' && request.method === 'POST') return anonymousSession(request,env);
+   if (path === '/api/session/anonymous' && request.method === 'POST') {
+    // Consume the small JSON body before responding so local keep-alive connections remain reusable.
+    if (request.body) await body(request);
+    return anonymousSession(request,env);
+   }
    if (!withAccounts && path.startsWith('/api/auth/') && !['/api/auth/me','/api/auth/providers'].includes(path)) return json({error:'Account system is disabled.',code:'ACCOUNTS_DISABLED'},404);
    if (oauthCallback) return finishOAuth(request, env, oauthCallback[1] as Provider);
    if (path === '/api/auth/providers' && request.method === 'GET') return json(withAccounts ? providerConfiguration(env) : {google:false,wechat:false});
