@@ -20,21 +20,43 @@ A cinematic animation made with this project's office, characters and portraits,
 
 ## Play online
 
-The maintained Cloudflare deployment is the playable demo. Its URL will be added before publication. Google login or verified email registration is required; use only fictional game data during play. The hosted deployment may have different operator configuration from a self-hosted fork.
+**[Play the hosted demo → https://scam.gamefun.world](https://scam.gamefun.world)**
 
-## Develop or self-host
+The maintained demo requires Google login or verified email. The source defaults to **no accounts required**; your own instance can use either mode.
 
-Requires Node.js 24 and npm.
+## Quick local start — no accounts
+
+Install Node.js 24 and Git, then:
 
 ```sh
 git clone https://github.com/mrzh7/scam-with-your-friends-web.git
 cd scam-with-your-friends-web
 npm ci
-npm test
-npm run build
+cp .dev.vars.example .dev.vars
 ```
 
-To run the full application, configure your own Cloudflare database and authentication following [DEPLOYMENT.md](docs/DEPLOYMENT.md). There is no guest or simulated-account demo in this repository. The offline dialogue option still works inside the authenticated game when no AI provider is configured.
+On Windows PowerShell, use `Copy-Item .dev.vars.example .dev.vars` instead of `cp`. If you already have `.dev.vars`, edit it rather than overwriting your keys.
+
+For AI dialogue, edit `.dev.vars`:
+
+```dotenv
+ACCOUNTS_ENABLED=false
+AI_BASE_URL=https://api.deepseek.com
+AI_MODEL=deepseek-v4-flash
+AI_API_KEY=your-own-provider-key
+```
+
+```sh
+npm run dev
+```
+
+Open **http://localhost:5173**. Local database migrations run automatically. No Cloudflare login, OAuth setup or email service is needed. Leaving the AI key empty enables scripted offline play. Text AI and cloud speech use separate credentials; cloud TTS is optional.
+
+Progress is isolated per browser using an anonymous cookie and a local simulated D1 database. Export backups before clearing cookies. See [the full local guide](docs/QUICKSTART.md) for storage, alternative providers and troubleshooting.
+
+## Enable accounts and deploy
+
+Set **`ACCOUNTS_ENABLED=true`** in your deployment's `wrangler.jsonc` vars, configure your own D1 database and at least one login method, then follow the [step-by-step Cloudflare guide](docs/DEPLOYMENT.md). Google, email, AI and TTS each have separate configuration. Guest progress is not automatically merged into registered accounts.
 
 ## What is implemented
 
@@ -45,7 +67,7 @@ To run the full application, configure your own Cloudflare database and authenti
 | Workweek | Seven days, timed quotas, shop, delivery collection, inventory, accidents and performance review |
 | Voice | Speech recognition where supported, browser speech, optional MiniMax or ElevenLabs TTS; mute skips cloud TTS |
 | Co-op | Up to four players, WebSocket state, shared day/quota and WebRTC voice; TURN configuration for reliable relay |
-| Accounts | Google login or verified email/password via Resend; hidden WeChat UI with server adapter retained |
+| Accounts | Optional; disabled by default. Google login or verified email/password via Resend; hidden WeChat UI with server adapter retained |
 | Saves | D1 account saves, revision conflict detection and local recovery/export |
 | Languages | English, Chinese, Portuguese, Japanese, Spanish; environment detection and manual override |
 | Admin | Server-authorized provider configuration; administrator is a configured, verified Google identity |
@@ -61,7 +83,7 @@ Captured from this implementation using a synthetic test account and offline dia
 Use **Cloudflare Workers with Static Assets**, D1 and SQLite-backed Durable Objects. This is not a static-only Pages application.
 
 1. Create your own D1 database and set its ID in `wrangler.jsonc`.
-2. Configure a canonical HTTPS origin and at least one login method.
+2. Choose account mode. When enabled, configure a canonical HTTPS origin and at least one login method.
 3. Add server secrets for the providers you actually want to use.
 4. Apply migrations and deploy. Connect a private deployment fork to Workers Builds for automatic releases.
 

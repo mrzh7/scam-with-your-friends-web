@@ -11,6 +11,7 @@ export interface AccountSession { user: Account; state: GameState; settings: Sav
 export function AccountGate({ children }: { children: (session: AccountSession, logout: () => Promise<void>) => ReactNode }) {
  const [session, setSession] = useState<AccountSession | null>(null), [checking, setChecking] = useState(true), [busy, setBusy] = useState(false);
  const [mode, setMode] = useState<'login' | 'register'>('login'), [error, setError] = useState(''), [notice, setNotice] = useState('');
+ const [accountsMode, setAccountsMode] = useState<boolean | null>(null);
  const [providers, setProviders] = useState({ google: false, wechat: false });
  const [verificationEmail,setVerificationEmail]=useState<string|null>(null),[verificationToken,setVerificationToken]=useState<string|null>(()=>new URLSearchParams(location.hash.slice(1)).get('verify-email'));
  const current = useRef(session); current.current = session;
@@ -18,8 +19,15 @@ export function AccountGate({ children }: { children: (session: AccountSession, 
  const refresh = useCallback(async () => {
   const generation = ++version.current; setChecking(true);
   try {
-   const { user } = await api<{ user: Account | null }>('/auth/me');
+   const identity = await api<{ user: Account | null; accountsEnabled?: boolean }>('/auth/me');
+   let user = identity.user;
    if (!alive.current || generation !== version.current) return;
+   setAccountsMode(identity.accountsEnabled !== false);
+   if (identity.accountsEnabled === false) {
+    setVerificationToken(null);
+    if (!user) user = (await api<{user:Account}>('/session/anonymous','POST',{})).user;
+    if (!alive.current || generation !== version.current) return;
+   }
    if (!user) { setSession(null); return; }
    if(user.emailVerified===false){setSession(null);setVerificationEmail(user.email);return;}
    setVerificationEmail(null);
@@ -60,6 +68,7 @@ export function AccountGate({ children }: { children: (session: AccountSession, 
   try { const result = await api<{ url: string }>('/auth/' + provider + '/start', 'POST', {}); location.assign(result.url); } catch (e) { setError((e as Error).message); setBusy(false); }
  };
  if (session && !checking && !verificationToken) return <>{notice && <div className="auth-notice" role="status">{t(notice)}<button onClick={() => setNotice('')} aria-label={t("关闭账号提示")}>×</button></div>}{t(children({ ...session, providers }, logout))}</>;
+ if (checking || accountsMode === false || accountsMode === null) return <main className="auth-screen"><LanguageSelector/><section className="auth-card"><h1>{t("正在载入游戏…")}</h1>{error && <p role="alert">{t(error)}</p>}{!checking && <button onClick={() => {setError('');void refresh();}}>{t("重试")}</button>}</section></main>;
  return <main className="auth-screen"><LanguageSelector/>
   <section className="auth-brand"><span className="auth-kicker">{t("KOLKATA CALL CENTER · EMPLOYEE PORTAL")}</span><div className="game-logo"><h1>{t("AI")}<span>{t("CALL")}</span><strong>{t("CENTER")}<span className="logo-dot">.</span></strong></h1></div><p>{t("先领工牌，再来上班。")}</p><small>{t("你的进度、金币、道具和成就，跟着账号走。")}</small><div className="auth-stamp">{t("NOW HIRING")}<br/>{t("QUESTIONABLE TALENT.")}</div></section>
   <section className="auth-card" aria-label={t("注册和登录")}><span className="account-emblem"><Icon name="user" size={28}/></span><small>{t("EMPLOYEE ACCESS")}</small><h1>{t(checking ? '正在核对员工档案…' : mode === 'login' ? '欢迎回来，打工人。' : '领取你的新工牌。')}</h1><p>{t("注册或登录后才能开始游戏。首次第三方登录将自动创建账号。")}</p>

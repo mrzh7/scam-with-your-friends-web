@@ -13,5 +13,5 @@ export function accountDatabase() {
   run: async () => ({success:true, meta: sqlite.prepare(sql).run(...values)}),
  });
  const database = { prepare, batch: async (statements: ReturnType<typeof prepare>[]) => { sqlite.exec('BEGIN'); try { const results=[]; for (const statement of statements) results.push(await statement.all()); sqlite.exec('COMMIT'); return results; } catch(e) { sqlite.exec('ROLLBACK'); throw e; } } } as unknown as D1Database;
- return {sqlite, env: {DB:database} as Env};
+ return {sqlite, env: {DB:database,ACCOUNTS_ENABLED:'true'} as Env};
 }

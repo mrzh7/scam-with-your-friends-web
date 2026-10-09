@@ -1,9 +1,10 @@
-import {currentUser,type Env} from './auth';
+import {accountsEnabled,currentUser,type Env} from './auth';
 import {probeAI} from './dialogue';
 import {probeSpeech,validateSpeechInput,speechConfiguration} from './speech';
 const administratorEmail=(env:Env)=>env.ADMIN_EMAIL?.trim().toLowerCase() || '';
 export const reservedAdminEmail=(email:string,env:Env)=>!!administratorEmail(env)&&email.trim().toLowerCase()===administratorEmail(env);
 export async function isAdministrator(request:Request,env:Env){
+ if(!accountsEnabled(env))return false;
  const email=administratorEmail(env);if(!email)return false;
  const user=await currentUser(request,env);if(!user)return false;
  return !!await env.DB.prepare("SELECT user_id FROM auth_identities WHERE user_id=? AND provider='google' AND verified_email=?").bind(user.id,email).first();
@@ -18,7 +19,7 @@ async function read(env:Env):Promise<Configuration>{
  const {iv,data}=JSON.parse(row.payload);
  return JSON.parse(dec.decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:bytes(iv)},await key(env),bytes(data))));
 }
-export async function runtimeEnv(env:Env):Promise<Env>{return {...env,...await read(env)};}
+export async function runtimeEnv(env:Env):Promise<Env>{return accountsEnabled(env)?{...env,...await read(env)}:env;}
 async function save(env:Env,data:Configuration,expected:string|null){
  const iv=crypto.getRandomValues(new Uint8Array(12)),encrypted=new Uint8Array(await crypto.subtle.encrypt({name:'AES-GCM',iv},await key(env),enc.encode(JSON.stringify(data))));
  const payload=JSON.stringify({iv:btoa(String.fromCharCode(...iv)),data:btoa(String.fromCharCode(...encrypted))});

@@ -1131,5 +1131,11 @@
   "恢复画面": "Restaurar imagem",
   "正在聆听，请说话…": "Ouvindo. Pode falar…",
   "班次即将结束": "O turno está terminando",
-  "班次剩余时间": "Tempo restante do turno"
+  "班次剩余时间": "Tempo restante do turno",
+  "免账户模式：进度绑定当前浏览器，请定期导出备份。": "Modo sem conta: o progresso está vinculado a este navegador. Exporte backups regularmente.",
+  "访客进度": "Progresso de visitante",
+  "访客自动保存": "Salvamento de visitante",
+  "免账户模式": "Modo sem conta",
+  "正在载入游戏…": "Carregando jogo…",
+  "重试": "Tentar novamente"
 }

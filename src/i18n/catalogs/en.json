@@ -1131,5 +1131,11 @@
   "恢复画面": "Restore view",
   "正在聆听，请说话…": "Listening. Please speak…",
   "班次即将结束": "Shift ending soon",
-  "班次剩余时间": "Shift time remaining"
+  "班次剩余时间": "Shift time remaining",
+  "免账户模式：进度绑定当前浏览器，请定期导出备份。": "No-account mode: progress is linked to this browser. Export backups regularly.",
+  "访客进度": "Guest progress",
+  "访客自动保存": "Guest autosave",
+  "免账户模式": "No-account mode",
+  "正在载入游戏…": "Loading game…",
+  "重试": "Retry"
 }

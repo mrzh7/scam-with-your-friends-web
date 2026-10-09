@@ -7,11 +7,11 @@ These are drafts, not posts already published. Replace links if you rename the r
 - Name: scam-with-your-friends-web
 - Description: Experimental browser office game with AI callers, co-op, voice and Cloudflare Workers. React + Three.js. Cloudflare-hosted demo.
 - Topics: typescript, react, threejs, cloudflare-workers, durable-objects, web-game, ai-game, webrtc, text-to-speech, i18n
-- Website: point to a maintained deployment only after smoke-testing that deployment; the maintained demo requires login.
+- Website: https://scam.gamefun.world (maintained demo; login required).
 
 ## English short post
 
-I open-sourced Scam With Your Friends — Web: a browser office game with fictional callers, a 3D office and a ticking daily quota. Try the maintained Cloudflare deployment (login required). Optional AI dialogue, TTS and four-player co-op run on Cloudflare Workers. Built with React, TypeScript and Three.js.
+I open-sourced Scam With Your Friends — Web: a browser office game with fictional callers, a 3D office and a ticking daily quota. Try https://scam.gamefun.world (login required), or run locally without accounts. Optional AI dialogue, TTS and four-player co-op run on Cloudflare Workers. Built with React, TypeScript and Three.js.
 
 Code + setup: https://github.com/mrzh7/scam-with-your-friends-web
 
@@ -21,7 +21,7 @@ I'd especially like feedback on mobile voice reliability and the Portuguese/Japa
 
 我把一个浏览器办公室游戏 Scam With Your Friends — Web 开源了：可以走到工位接听虚构来电、完成任务、买道具，在倒计时前达到每日业绩。React + Three.js，后端用 Cloudflare Workers / D1 / Durable Objects。支持可选 AI 对话、TTS 和四人合作，提供英语、中文、葡语、日语、西语。
 
-在线试玩使用维护者的 Cloudflare 部署，需要 Google 或已验证邮箱登录。手机语音兼容性仍需要更多真机反馈，欢迎反馈可复现问题，也欢迎改进翻译。项目受 Scam With Your Friends 启发，是非官方实验；不包含原作媒体素材。
+在线试玩：https://scam.gamefun.world，需要 Google 或已验证邮箱登录；本机运行默认不需要账户。手机语音兼容性仍需要更多真机反馈，欢迎反馈可复现问题，也欢迎改进翻译。项目受 Scam With Your Friends 启发，是非官方实验；不包含原作媒体素材。
 
 源码：https://github.com/mrzh7/scam-with-your-friends-web
 

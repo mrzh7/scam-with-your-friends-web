@@ -77,7 +77,7 @@ Both MP4s were decoded end to end without errors. Chrome playback checks passed 
 
 The project's [license and provenance notice](../../THIRD_PARTY_NOTICES.md) still applies. This trailer does not include downloaded original-game footage, original-game audio or music from a commercial recording. That does not grant rights to third-party game names, trademarks or protected visual expression.
 
-When the maintained Cloudflare demo URL is finalized, replace the end-card URL in `main.ts` and rebuild. For now the CTA points to the project's GitHub repository; no unconfirmed deployment address is baked into the film.
+The maintained demo is https://scam.gamefun.world (login required). The current film's end card links to this GitHub repository, whose README links directly to the demo.
 
 ## GitHub inline playback
 

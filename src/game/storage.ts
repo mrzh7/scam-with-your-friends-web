@@ -1,6 +1,6 @@
 import type {LanguagePreference} from '../i18n/locales';
 import { parseSave, type GameState } from './engine';
-export interface Account { id: string; name: string; email: string; emailVerified?: boolean }
+export interface Account { anonymous?: boolean; id: string; name: string; email: string; emailVerified?: boolean }
 export interface SaveSettings { sound: boolean; wallpaper: string; language?: LanguagePreference }
 export const defaultSettings: SaveSettings = { sound: false, wallpaper: 'mountain' };
 export interface AccountCache { userId: string; state: GameState; settings: SaveSettings; revision: number; dirty: boolean }

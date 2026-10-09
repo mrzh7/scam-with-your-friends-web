@@ -1,7 +1,7 @@
 import {emailVerified,requestVerification,verifyEmail} from './email';
 import {normalizeLocale} from '../src/i18n/locales';
 import {adminSettings,isAdministrator,runtimeEnv,reservedAdminEmail} from './admin';
-import { currentUser, digest, passwordHash, constantEqual, publicUser, rateLimit, sessionCookie, type Env, type UserRow } from './auth';
+import { accountsEnabled, currentPlayer, anonymousSession, currentUser, digest, passwordHash, constantEqual, publicUser, rateLimit, sessionCookie, type Env, type UserRow } from './auth';
 import { parseSave } from '../src/game/engine';
 import { aiConfigured, generateDialogue, probeAI } from './dialogue';
 import { iceConfiguration } from './rtc';
@@ -25,12 +25,15 @@ export default {
   try {
    if (path === '/api/admin/settings') return adminSettings(request,env);
    if (path === '/api/config' || path === '/api/dialogue' || path === '/api/speech' || path === '/api/ai/test') env = await runtimeEnv(env);
+   const withAccounts = accountsEnabled(env);
+   if (path === '/api/session/anonymous' && request.method === 'POST') return anonymousSession(request,env);
+   if (!withAccounts && path.startsWith('/api/auth/') && !['/api/auth/me','/api/auth/providers'].includes(path)) return json({error:'Account system is disabled.',code:'ACCOUNTS_DISABLED'},404);
    if (oauthCallback) return finishOAuth(request, env, oauthCallback[1] as Provider);
-   if (path === '/api/auth/providers' && request.method === 'GET') return json(providerConfiguration(env));
+   if (path === '/api/auth/providers' && request.method === 'GET') return json(withAccounts ? providerConfiguration(env) : {google:false,wechat:false});
    const oauthStart = path.match(/^\/api\/auth\/(google|wechat)\/start$/);
    if (oauthStart && request.method === 'POST') { const data = await body(request); return startOAuth(request, env, oauthStart[1] as Provider, data.link === true); }
    if (path === '/api/health') return json({ ok: true, runtime: 'cloudflare-workers', version: '0.2.0' });
-   if (path === '/api/config' && request.method === 'GET') return json({ ai: aiConfigured(env), model: null, missing: [], speech: {provider:speechConfiguration(env).provider, available:speechConfiguration(env).available}, relay: !!(env.TURN_KEY_ID && env.TURN_API_TOKEN) });
+   if (path === '/api/config' && request.method === 'GET') return json({ accountsEnabled: withAccounts, ai: aiConfigured(env), model: null, missing: [], speech: {provider:speechConfiguration(env).provider, available:speechConfiguration(env).available}, relay: !!(env.TURN_KEY_ID && env.TURN_API_TOKEN) });
    if (path === '/api/ai/test' && request.method === 'POST') {
     const user = await currentUser(request, env); if (!user) return json({ error: '请先登录。' }, 401); if (!await isAdministrator(request,env)) return json({error:'Administrator access required.'},403);
     if (!aiConfigured(env)) return json({ error: 'AI 尚未配置密钥与模型。' }, 503);
@@ -61,8 +64,8 @@ export default {
     }
     return json({ ok: true }, 200, { 'Set-Cookie': `swyf_session=; HttpOnly; SameSite=Lax; Path=/; Max-Age=0${url.protocol === 'https:' ? '; Secure' : ''}` });
    }
-   const user = await currentUser(request, env);
-   if (path === '/api/auth/me' && request.method === 'GET') return json({ user: user ? publicUser(user) : null });
+   const user = await currentPlayer(request, env);
+   if (path === '/api/auth/me' && request.method === 'GET') return json({ accountsEnabled: withAccounts, user: user ? {...publicUser(user),anonymous:!withAccounts} : null });
    if (!user) return json({ error: '请先注册或登录后再玩游戏。', code: 'AUTH_REQUIRED' }, 401);
    if (!emailVerified(user)) return json({error:'请先验证邮箱，再开始游戏。',code:'EMAIL_VERIFICATION_REQUIRED'},403);
    if (path === '/api/auth/identities' && request.method === 'GET') {

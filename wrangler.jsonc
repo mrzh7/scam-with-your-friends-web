@@ -41,5 +41,5 @@
   },
   "workers_dev": true,
   "preview_urls": false,
-  "vars": {}
+  "vars": {"ACCOUNTS_ENABLED": "false"}
 }

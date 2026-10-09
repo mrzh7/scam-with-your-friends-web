@@ -4,7 +4,7 @@ import { DurableObject } from 'cloudflare:workers';
 import { gameReducer, newGame, dayConfig, applyDialogue, parseSave, type Action, type GameState } from '../src/game/engine';
 import { makeWorld, addActor, setInput, stepWorld, interactWorld, syncDeliveries, type World, type WorldCommand } from '../src/game/world';
 import { generateDialogue } from './dialogue';
-import type { Env } from './auth';
+import { accountsEnabled, type Env } from './auth';
 interface Player { id: string; name: string; game: GameState; lastAction: number; actionCount?: number; voice?: boolean; aiAt?: number; aiCount?: number }
 interface Room { code: string; host: string; players: Record<string, Player>; seconds: number; day: number; phase: GameState['phase']; chats: { name: string; text: string }[]; world: World }
 export class OfficeRoom extends DurableObject<Env> {
@@ -21,10 +21,10 @@ export class OfficeRoom extends DurableObject<Env> {
  async authorized(ws: WebSocket) {
   const a = ws.deserializeAttachment(), now = Date.now();
   if (!a?.sessionHash || !a.expiresAt || a.expiresAt <= now) { ws.close(4001, "Login required"); return false; }
-  if (a.checkedUntil > now) return true;
-  const session = await this.env.DB.prepare("SELECT user_id FROM sessions WHERE token_hash=? AND user_id=? AND expires_at>?").bind(a.sessionHash, a.id, now).first();
+  if (a.checkedUntil > now && a.accountsEnabled === accountsEnabled(this.env)) return true;
+  const session = await this.env.DB.prepare("SELECT s.user_id FROM sessions s JOIN users u ON u.id=s.user_id WHERE s.token_hash=? AND s.user_id=? AND s.expires_at>? AND u.guest=?").bind(a.sessionHash, a.id, now,accountsEnabled(this.env)?0:1).first();
   if (!session) { ws.close(4001, "Login required"); return false; }
-  ws.serializeAttachment({...a, checkedUntil: now + 5000}); return true;
+  ws.serializeAttachment({...a, checkedUntil: now + 5000, accountsEnabled: accountsEnabled(this.env)}); return true;
  }
  total() { return Object.values(this.room?.players || {}).reduce((n, p) => n + p.game.earned, 0); }
  connected(id: string) { return this.ctx.getWebSockets().some(w => w.deserializeAttachment()?.id === id && w.readyState === 1); }

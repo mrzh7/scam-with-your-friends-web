@@ -1,5 +1,7 @@
 # Security
 
+The source defaults to `ACCOUNTS_ENABLED=false`: anonymous browser sessions and isolated saves, without registration. Set it to `true` for Google/verified-email access. Guest sessions never authorize admin access and are rejected when accounts are enabled. Anonymous mode still stores session identifiers and progress; it is not a no-data mode. See [deployment](docs/DEPLOYMENT.md).
+
 Only the current main branch receives fixes. This is an experimental game, not a hardened authentication product or financial system.
 
 Do not post vulnerabilities, live credentials, cookies, email verification links or player records in public issues. Use GitHub's **Security → Report a vulnerability** if private vulnerability reporting is enabled. Otherwise ask for a private contact channel in an issue without disclosing the exploit or affected data.

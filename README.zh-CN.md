@@ -18,21 +18,46 @@ https://github.com/user-attachments/assets/5013ead8-cf12-4d1b-89f5-1818df086993
 
 ## 在线试玩
 
-试玩使用维护者的 Cloudflare 部署，发布前补上正式 URL。进入游戏需要 Google 登录或完成邮箱验证；请只使用游戏生成的虚构资料。线上配置可能与自行部署的版本不同。
+**[立即试玩：https://scam.gamefun.world](https://scam.gamefun.world)**
 
-## 本地开发与自行部署
+维护者的线上试玩站需要 Google 登录或验证邮箱。**开源代码默认不启用账户系统**，安装后无需注册即可玩；自行部署时可以打开账户开关。
 
-需要 Node.js 24 和 npm：
+## 方案一：本机快速运行，无需账户
+
+先安装 Node.js 24 和 Git，再执行：
 
 ```sh
 git clone https://github.com/mrzh7/scam-with-your-friends-web.git
 cd scam-with-your-friends-web
 npm ci
-npm test
-npm run build
 ```
 
-要运行完整服务，请按[部署指南](docs/DEPLOYMENT.md)配置自己的 Cloudflare 数据库和登录方式。本仓库不提供模拟账号或游客试玩；未配置大模型时，已登录玩家仍可使用离线剧情。
+复制配置：macOS/Linux 执行 `cp .dev.vars.example .dev.vars`；Windows PowerShell 执行 `Copy-Item .dev.vars.example .dev.vars`。已经有配置时直接编辑，避免覆盖原来的密钥。
+
+打开 `.dev.vars`，填写自己的大模型密钥，例如：
+
+```dotenv
+ACCOUNTS_ENABLED=false
+AI_BASE_URL=https://api.deepseek.com
+AI_MODEL=deepseek-v4-flash
+AI_API_KEY=你的服务商密钥
+```
+
+启动：
+
+```sh
+npm run dev
+```
+
+浏览器打开 **http://localhost:5173** 即可。启动脚本自动初始化本机数据库，**不需要 Cloudflare 账号、Google OAuth 或邮件服务**。不填 AI 密钥也能玩离线剧情。TTS 是独立的可选配置，不必为开始游戏先配置它。
+
+每个浏览器通过匿名会话保存自己的进度；清除 Cookie 前请导出存档。完整安装、换服务商、数据位置和排错见[本机快速开始](docs/QUICKSTART.md)。
+
+## 方案二：启用账户系统并部署
+
+在部署配置 `wrangler.jsonc` 的 `vars` 中设置 **`ACCOUNTS_ENABLED="true"`**，配置自己的 D1 数据库及至少一种登录方式，再按[详细部署指南](docs/DEPLOYMENT.md)操作。指南包含 Google、邮箱验证、全部环境变量、管理员、AI/TTS 及 GitHub 自动部署。
+
+切换开关不会删除旧存档，也不会自动把游客存档合并到注册账号；需要时使用导出/导入。线上试玩站现有登录要求不受源码默认值影响。
 
 ## 已有功能
 
@@ -55,7 +80,7 @@ npm run build
 
 采用 React + TypeScript + Vite + Three.js，后端是 Cloudflare Workers、D1 和 Durable Objects。**不能只上传静态文件到 Pages 就获得完整功能。**
 
-[部署指南](docs/DEPLOYMENT.md) 包含创建数据库、迁移、Google 回调、邮件域名验证、AI/TTS 独立密钥、管理员设置及 GitHub 自动部署。上线需配置至少一种登录方法。公开源码不包含运营方数据库、用户信息、生产 ID 或服务凭据。微信入口隐藏，服务端适配代码保留供以后配置。
+[部署指南](docs/DEPLOYMENT.md) 包含创建数据库、迁移、Google 回调、邮件域名验证、AI/TTS 独立密钥、管理员设置及 GitHub 自动部署。启用账户系统时需配置至少一种登录方法。公开源码不包含运营方数据库、用户信息、生产 ID 或服务凭据。微信入口隐藏，服务端适配代码保留供以后配置。
 
 ## 验证与限制
 

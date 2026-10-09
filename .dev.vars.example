@@ -1,7 +1,14 @@
+# Default: no registration/login. Set true to require real accounts.
+ACCOUNTS_ENABLED=false
+# Only the server reads these values. No VITE_ prefix.
+# DeepSeek example; use a model ID available in your own provider console.
+AI_BASE_URL=https://api.deepseek.com
+AI_API_KEY=
+AI_MODEL=deepseek-v4-flash
+
 # Copy to .dev.vars. Never commit real secrets.
-# Default provider is OpenRouter; the model must support JSON schema outputs.
+# Alternative: set AI_BASE_URL=https://openrouter.ai/api/v1 and an available AI_MODEL.
 OPENROUTER_API_KEY=
-AI_MODEL=
 # Optional OpenAI-compatible provider overrides:
 # AI_BASE_URL=https://your-provider.example/v1
 # AI_API_KEY=
@@ -35,7 +42,7 @@ SITE_SETTINGS_KEY=
 
 # Transactional email verification (Resend). Server-only credentials.
 # RESEND_API_KEY=
-# EMAIL_FROM=Kolkata OS <noreply@game.example.com>
+# EMAIL_FROM=Scam With Your Friends <noreply@game.example.com>
 # AUTH_ORIGIN=https://game.example.com
 
 # Required for administrator access; only this verified Google identity is accepted.
