@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="410" viewBox="0 0 800 410" role="img" aria-labelledby="title desc">
+<title id="title">Star history — mrzh7/scam-with-your-friends-web</title><desc id="desc">8 current stars. Daily cumulative history from GitHub's aggregate API. Updated 2026-10-09.</desc>
+<rect width="800" height="410" rx="16" fill="#0d1117"/>
+<g font-family="system-ui, sans-serif" fill="#e6edf3">
+<text x="40" y="43" font-size="24" font-weight="700">Star History</text><text x="40" y="70" font-size="14">mrzh7/scam-with-your-friends-web</text>
+<text x="760" y="45" text-anchor="end" font-size="22" font-weight="700">★ 8</text>
+<path d="M70 320H760" stroke="#30363d"/><text x="57" y="325" text-anchor="end" font-size="13">0</text>
+<path d="M70 217.5H760" stroke="#30363d"/><text x="57" y="222.5" text-anchor="end" font-size="13">4</text>
+<path d="M70 115H760" stroke="#30363d"/><text x="57" y="120" text-anchor="end" font-size="13">8</text>
+<path d="M70.00,320.00 L191.86,320.00 L313.72,320.00 L435.58,320.00 L557.44,320.00 L679.30,115.00" fill="none" stroke="#39ba93" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="70.00" cy="320.00" r="4" fill="#39ba93"><title>2026-10-04: 0</title></circle><circle cx="191.86" cy="320.00" r="4" fill="#39ba93"><title>2026-10-05: 0</title></circle><circle cx="313.72" cy="320.00" r="4" fill="#39ba93"><title>2026-10-06: 0</title></circle><circle cx="435.58" cy="320.00" r="4" fill="#39ba93"><title>2026-10-07: 0</title></circle><circle cx="557.44" cy="320.00" r="4" fill="#39ba93"><title>2026-10-08: 0</title></circle><circle cx="679.30" cy="115.00" r="4" fill="#39ba93"><title>2026-10-09: 8</title></circle>
+<text x="70" y="349" font-size="13">2026-10-04</text><text x="760" y="349" text-anchor="end" font-size="13">2026-10-09</text>
+<text x="40" y="387" font-size="12">GitHub aggregate history · Updated 2026-10-09 · Daily automatic refresh</text>
+</g></svg>
