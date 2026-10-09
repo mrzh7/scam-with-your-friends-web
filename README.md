@@ -6,7 +6,7 @@
 
 **Answer fictional AI callers, talk with your team over voice, manage your time, hit the daily quota and survive the performance review.**
 
-[简体中文](README.zh-CN.md) · [English](README.md)
+**English** · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md)
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ Play Demo</strong></a>
@@ -66,7 +66,7 @@ This is an experimental, unofficial project inspired by [Scam With Your Friends]
 4. **Shop and collect deliveries** — upgrades install immediately; physical items must be picked up in the office.
 5. **Hit the daily quota** before the shift timer ends and pass the performance review — miss it and the run is over. Co-op: up to four players share the day; **V** for team voice.
 
-Full rules: [Gameplay guide](docs/GAMEPLAY-EN.md) — round loop, controls, calls and trust, tools, money, shop items, accidents, co-op voice and audio notes.
+Full rules: [Gameplay guide](docs/GAMEPLAY-EN.md) — round loop, controls, calls and trust, tools, money, shop items, accidents, co-op voice and audio notes. Also in: [简体中文](docs/GAMEPLAY.md) · [Português](docs/GAMEPLAY-PT.md) · [Español](docs/GAMEPLAY-ES.md) · [日本語](docs/GAMEPLAY-JA.md).
 
 ## Screenshots
 

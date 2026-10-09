@@ -1,6 +1,6 @@
 # Gameplay guide and system design · v0.2
 
-[简体中文](GAMEPLAY.md) · **English**
+**English** · [简体中文](GAMEPLAY.md) · [Português](GAMEPLAY-PT.md) · [Español](GAMEPLAY-ES.md) · [日本語](GAMEPLAY-JA.md)
 
 This is the English guide to the rules implemented in this repository: an online co-op call center job simulator and dark comedy party game with fictional AI callers, time management, a daily quota and a performance review. Public information about the original game confirms the main loop (AI callers, a windowed computer, a co-op office, daily quota, shop, accidents and reviews). The seven-day curve, delivery times, upgrade effects, map scale and physics parameters below are this web version's own design, **not hidden rules of the original game**. See the [research notes](RESEARCH.md). The in-game Handbook and the "How to play" button show the same material.
 
