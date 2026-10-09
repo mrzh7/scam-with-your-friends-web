@@ -78,3 +78,15 @@ Both MP4s were decoded end to end without errors. Chrome playback checks passed 
 The project's [license and provenance notice](../../THIRD_PARTY_NOTICES.md) still applies. This trailer does not include downloaded original-game footage, original-game audio or music from a commercial recording. That does not grant rights to third-party game names, trademarks or protected visual expression.
 
 When the maintained Cloudflare demo URL is finalized, replace the end-card URL in `main.ts` and rebuild. For now the CTA points to the project's GitHub repository; no unconfirmed deployment address is baked into the film.
+
+## GitHub inline playback
+
+The English and Chinese repository READMEs use GitHub-hosted video attachments as standalone URLs, which GitHub renders as players. These are full-length 720p editions with music and effects, approximately 6.9 MB each, below the free-plan 10 MB attachment limit. The original 1080p MP4 downloads remain in `docs/media/`. Attachment access follows the repository's visibility.
+
+To regenerate a compact attachment edition, transcode the corresponding 1080p file with:
+
+```sh
+ffmpeg -i docs/media/trailer-en.mp4 -vf scale=1280:720 -c:v libx264 -preset medium -b:v 1100k -maxrate 1250k -bufsize 2500k -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart marketing/trailer/.renders/embed-en.mp4
+```
+
+Upload the resulting file through GitHub's attachment uploader, then place the returned attachment URL in its own paragraph in the README. Keep the existing attachment until its replacement upload succeeds.

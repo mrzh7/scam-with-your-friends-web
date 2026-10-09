@@ -12,7 +12,7 @@ This is an experimental, unofficial project inspired by [Scam With Your Friends]
 
 ## Watch the trailer
 
-[![Watch the 48-second trailer](docs/media/trailer-preview.gif)](docs/media/trailer-en.mp4)
+https://github.com/user-attachments/assets/4c90325b-0fb6-4102-877f-55c378ca5371
 
 **[▶ English · 1080p with sound](docs/media/trailer-en.mp4)** · **[▶ 中文字幕版](docs/media/trailer-zh-CN.mp4)** · [Poster](docs/media/trailer-poster.jpg) · [Original soundtrack](docs/media/trailer-score.mp3)
 

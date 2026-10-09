@@ -10,7 +10,7 @@
 
 ## 宣传动画
 
-[![观看 48 秒宣传动画](docs/media/trailer-preview.gif)](docs/media/trailer-zh-CN.mp4)
+https://github.com/user-attachments/assets/5013ead8-cf12-4d1b-89f5-1818df086993
 
 **[▶ 中文字幕版 · 1080p，含音乐与音效](docs/media/trailer-zh-CN.mp4)** · **[▶ English 原版](docs/media/trailer-en.mp4)** · [宣传海报](docs/media/trailer-poster.jpg) · [原创配乐](docs/media/trailer-score.mp3)
 
