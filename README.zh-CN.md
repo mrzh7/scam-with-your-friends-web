@@ -27,6 +27,7 @@
   <img alt="Three.js" src="https://img.shields.io/badge/Three.js-r180-000000?logo=threedotjs&logoColor=white" />
   <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white" />
   <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
+  <a href="https://x.com/mr_zh7"><img alt="X @mr_zh7" src="https://img.shields.io/badge/X-@mr__zh7-000000?logo=x&logoColor=white" /></a>
 </p>
 
 <!-- Ranking badges (uncomment when live — do not leave broken images):
@@ -160,6 +161,7 @@ npm run check:i18n
 - [功能建议](https://github.com/mrzh7/scam-with-your-friends-web/issues/new?template=feature_request.yml)
 - [讨论区（问答、想法）](https://github.com/mrzh7/scam-with-your-friends-web/discussions)
 - [安全政策](SECURITY.md)
+- 联系：X [@mr_zh7](https://x.com/mr_zh7)
 
 ## 参与贡献
 
@@ -173,7 +175,7 @@ npm run check:i18n
 
 ### Star · 分享 · 参与贡献
 
-觉得好玩，请 **[给仓库点 Star](https://github.com/mrzh7/scam-with-your-friends-web)**，拉上朋友 **[试玩 Demo](https://scam.gamefun.world)** 并分享，也欢迎提交 Issue 或 Pull Request。
+觉得好玩，请 **[给仓库点 Star](https://github.com/mrzh7/scam-with-your-friends-web)**，拉上朋友 **[试玩 Demo](https://scam.gamefun.world)** 并分享，在 **[X 上关注](https://x.com/mr_zh7)**，也欢迎提交 Issue 或 Pull Request。
 
 </div>
 

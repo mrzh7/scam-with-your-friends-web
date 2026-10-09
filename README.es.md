@@ -27,6 +27,7 @@
   <img alt="Three.js" src="https://img.shields.io/badge/Three.js-r180-000000?logo=threedotjs&logoColor=white" />
   <img alt="Cloudflare" src="https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white" />
   <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
+  <a href="https://x.com/mr_zh7"><img alt="X @mr_zh7" src="https://img.shields.io/badge/X-@mr__zh7-000000?logo=x&logoColor=white" /></a>
 </p>
 
 <!-- Ranking badges (uncomment when live — do not leave broken images):
@@ -160,6 +161,7 @@ Consulta las [notas de aceptación](docs/ACCEPTANCE.md), [SECURITY.md](SECURITY.
 - [Solicitar una función](https://github.com/mrzh7/scam-with-your-friends-web/issues/new?template=feature_request.yml)
 - [Discusiones (preguntas e ideas)](https://github.com/mrzh7/scam-with-your-friends-web/discussions)
 - [Política de seguridad](SECURITY.md)
+- Contacto: X [@mr_zh7](https://x.com/mr_zh7)
 
 ## Contribuir
 
@@ -173,7 +175,7 @@ Consulta las [notas de aceptación](docs/ACCEPTANCE.md), [SECURITY.md](SECURITY.
 
 ### Star · Comparte · Contribuye
 
-Si te gusta, da una **[estrella al repositorio](https://github.com/mrzh7/scam-with-your-friends-web)**, **[juega a la demo](https://scam.gamefun.world)** con tus amigos y compártela, o abre un issue o pull request.
+Si te gusta, da una **[estrella al repositorio](https://github.com/mrzh7/scam-with-your-friends-web)**, **[juega a la demo](https://scam.gamefun.world)** con tus amigos y compártela, **[síguenos en X](https://x.com/mr_zh7)**, o abre un issue o pull request.
 
 </div>
 
