@@ -29,7 +29,15 @@
   <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
 </p>
 
-[![Scam With Your Friends — Web gameplay preview](docs/media/trailer-preview.gif)](https://scam.gamefun.world)
+<!-- Ranking badges (uncomment when live — do not leave broken images):
+  Trendshift appears only after the repo is listed at https://trendshift.io
+  (replace REPO_ID with the id shown on https://trendshift.io/repositories/<id>):
+  <a href="https://trendshift.io/repositories/REPO_ID" target="_blank"><img src="https://trendshift.io/api/badge/repositories/REPO_ID" alt="mrzh7/scam-with-your-friends-web | Trendshift" width="250" height="55"/></a>
+  Star History rank badge (works only once the repo is in their ranking):
+  <a href="https://www.star-history.com/mrzh7/scam-with-your-friends-web"><img src="https://api.star-history.com/badge?repo=mrzh7/scam-with-your-friends-web" alt="Star History Rank" height="55"/></a>
+-->
+
+[![Scam With Your Friends — Web gameplay preview](docs/media/trailer-preview.gif)](docs/media/trailer-preview.gif)
 
 </div>
 
@@ -39,7 +47,7 @@ Scam With Your Friends — Web is an unofficial, free browser game and open-sour
 
 ## Screenshots
 
-[![Screenshot wall: office, call desk and main menu](docs/media/screenshot-wall.png)](https://scam.gamefun.world)
+[![Screenshot wall: office, call desk and main menu](docs/media/screenshot-wall.png)](docs/media/screenshot-wall.png)
 
 | Three.js office | Incoming call desk | Main menu |
 | --- | --- | --- |
@@ -156,6 +164,10 @@ Found a bug or have an idea? Tell us:
 ## Contributing
 
 Useful areas: mobile compatibility, natural translations, accessibility and reliable voice reconnection. See [CONTRIBUTING.md](CONTRIBUTING.md). Security issues: [SECURITY.md](SECURITY.md).
+
+## Star History
+
+<a href="https://www.star-history.com/#mrzh7/scam-with-your-friends-web&Date"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&type=Date" /></picture></a>
 
 <div align="center">
 
