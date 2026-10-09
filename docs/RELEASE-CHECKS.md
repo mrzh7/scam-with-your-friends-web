@@ -9,6 +9,7 @@ Date: 2026-10-09. Environment: Windows, Node.js 24.12.0. These results are scope
 - New repository starts from a clean initial history, excludes original-game screenshots/transcripts/HTML archives, attachments, credentials, databases, runtime logs, node_modules and builds.
 - Runtime administrator email is configurable and fails closed when absent; two regression tests cover the absent configuration.
 - The public tree contains no added guest/local-demo authentication path. Production login remains mandatory.
+- A temporary browser test used a synthetic account to exercise the real menu, office movement, sitting, answering a call and the agent camera. No page errors were observed. Screenshots in docs/media were visually inspected. This test does not bypass production login or ship a demo API.
 - Build warnings: the Three.js chunk slightly exceeds Vite's 500 kB advisory; this is a size warning, not a failed build. Node prints its experimental SQLite warning in tests.
 
 Provider requests are mocked in automated tests. Real microphone support, real email delivery, live AI/TTS, cross-network co-op and the user-supplied hosted demo still need environment-specific acceptance. Do not interpret this report as a guarantee of universal compatibility or asset-rights clearance.
