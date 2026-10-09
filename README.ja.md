@@ -42,7 +42,30 @@
 
 </div>
 
-Scam With Your Friends — Web は、非公式の無料ブラウザーゲームであり、オープンソースプロジェクトです。混沌とした架空の**コールセンター**を舞台にした**オンライン協力プレイの仕事シミュレーター**で、自分のデスクまで歩き、話した内容に反応する **AI 発信者**(入力、またはブラウザーが対応していれば**音声操作**)に応対し、デスクトップのタスクを完了してゲーム内のお金を稼ぎます。**1 日のノルマ**がある**時間管理**ループで時計と競い、オフィスの事故をかわし、上司の**人事評価**に挑みます。最大 4 人の友達と遊べる**ブラックコメディのパーティーゲーム**です。すべて架空の内容です。実在の支払い情報は絶対に入力しないでください。
+## 公式ゲームに着想
+
+**公式ストア:** [Steam の Scam With Your Friends](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)
+
+> 友達と一緒に詐欺コールセンターを運営しよう。どんどん荒唐無稽になる手口で AI 発信者をだまし、一生分の貯蓄を巻き上げる。1 日のノルマを達成し、オフィスを大混乱に陥れ、キレやすい上司の残酷な人事評価を生き延びよう。
+>
+> *（Steam 英語ページの短い説明の翻訳。公式英語原文は英語 README を参照。）*
+
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1791402592" alt="公式 Steam header" width="920" /></a>
+</p>
+
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/bcff5f79257b09d3477d82fbfc880c4d084bfee2/ss_bcff5f79257b09d3477d82fbfc880c4d084bfee2.1920x1080.jpg?t=1791402592" width="48%" alt="公式 Steam screenshot 1" /></a>
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/afe1c51df0a3e01d5d238a949a2754e5a00636a2/ss_afe1c51df0a3e01d5d238a949a2754e5a00636a2.1920x1080.jpg?t=1791402592" width="48%" alt="公式 Steam screenshot 2" /></a>
+</p>
+<p align="center">
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/d7676d89d64b88d0c817009cbb08afed3cfbf8b6/ss_d7676d89d64b88d0c817009cbb08afed3cfbf8b6.1920x1080.jpg?t=1791402592" width="48%" alt="公式 Steam screenshot 3" /></a>
+  <a href="https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/"><img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4954910/e29f4717a68c3234d24b824db66c4d56a8102b21/ss_e29f4717a68c3234d24b824db66c4d56a8102b21.1920x1080.jpg?t=1791402592" width="48%" alt="公式 Steam screenshot 4" /></a>
+</p>
+
+本リポジトリは**非公式の無料ブラウザー実験**です。原作ではなく、公式移植でもなく、原作開発者とは**無関係**です。上記の Steam ヘッダーとスクリーンショットの著作権は権利者に属し、参照のため Steam から**ホットリンク表示**しているだけで、このリポジトリには原作画像ファイルを含めていません。[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) を参照してください。
+
+**Scam With Your Friends — Web** は、[scam.gamefun.world](https://scam.gamefun.world) で遊べる非公式の無料ブラウザーリメイクです。友達と一緒に**詐欺コールセンター**を運営し、どんどん荒唐無稽になる手口で **AI 発信者**をだまし、**1 日のノルマ**を達成して**オフィスを大混乱**に陥れ、キレやすい上司の残酷な**人事評価**を生き延びます。デスクまで歩き、入力または対応があれば**音声操作**で会話し、デスクトップのタスクをこなし、最大 4 人で協力プレイできます。すべて架空です。実在の支払い情報は絶対に入力しないでください。
 
 ![Scam With Your Friends — Web の概要](docs/media/cover.svg)
 
@@ -88,7 +111,7 @@ https://github.com/user-attachments/assets/4c90325b-0fb6-4102-877f-55c378ca5371
 
 **[ホスト版デモをプレイ → https://scam.gamefun.world](https://scam.gamefun.world)** — デモでは Google ログインまたは認証済みメールを使います。**ソースコードの既定ではアカウント機能は無効です**。
 
-これは Steam の [Scam With Your Friends](https://store.steampowered.com/app/4954910/) に着想を得た、実験的な非公式プロジェクトです。原作そのものでも公式移植でもなく、原作の開発者とは一切関係ありません。[出典とライセンス](THIRD_PARTY_NOTICES.md)をご覧ください。タスク ID、カード、資金、イベントはすべて架空のものです。**実在の支払い情報は入力しないでください。**
+重ねて：これは [Scam With Your Friends](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/) に着想を得た**非公式**ブラウザーリメイクです。原作でも公式移植でもなく、原作開発者とは無関係です。[出典とライセンス](THIRD_PARTY_NOTICES.md)をご覧ください。タスク ID、カード、資金、イベントはすべて架空です。**実在の支払い情報は入力しないでください。**
 
 ## 遊び方
 

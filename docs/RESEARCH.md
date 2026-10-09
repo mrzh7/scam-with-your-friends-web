@@ -3,6 +3,7 @@
 This is an unofficial experiment inspired by the cooperative office and fictional-call loop of Scam With Your Friends. It is neither an official port nor a claim to have reconstructed every original mechanic.
 
 - [Original Steam page](https://store.steampowered.com/app/4954910/)
+- Steam store short description (EN/CN) is quoted in the README “Inspired by the official game” / “灵感来自官方游戏” sections for attribution; original screenshots are hotlinked from Steam only and not committed here.
 - [Developer website](https://jataterworldwide.com/scam-with-your-friends/)
 - [Official gameplay trailer](https://www.youtube.com/watch?v=e4BhBUryVFY)
 - [Rybolt gameplay](https://www.youtube.com/watch?v=siFj51d0XbM)
