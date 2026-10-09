@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & ideas (Discussions)
+    url: https://github.com/mrzh7/scam-with-your-friends-web/discussions
+    about: Ask questions, share ideas and show your runs.
+  - name: Play the live demo
+    url: https://scam.gamefun.world
+    about: Try the hosted game at scam.gamefun.world before filing an issue.
