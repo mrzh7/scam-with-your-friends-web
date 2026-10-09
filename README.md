@@ -216,7 +216,7 @@ Useful areas: mobile compatibility, natural translations, accessibility and reli
 
 ## Star History
 
-<a href="https://www.star-history.com/?type=date&amp;repos=mrzh7%2Fscam-with-your-friends-web"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mrzh7/scam-with-your-friends-web/star-history/star-history-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mrzh7/scam-with-your-friends-web/star-history/star-history-light.svg" /><img alt="Star History Chart" src="https://raw.githubusercontent.com/mrzh7/scam-with-your-friends-web/star-history/star-history-light.svg" /></picture></a>
+<a href="https://www.star-history.com/?type=date&amp;repos=mrzh7%2Fscam-with-your-friends-web"><picture><source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&amp;type=Date&amp;theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&amp;type=Date" /><img alt="Star History Chart" src="https://api.star-history.com/svg?repos=mrzh7/scam-with-your-friends-web&amp;type=Date" /></picture></a>
 
 <div align="center">
 
