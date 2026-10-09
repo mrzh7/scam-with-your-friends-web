@@ -1,6 +1,10 @@
+<div align="center">
+
 # Scam With Your Friends — Web
 
-**浏览器联机办公室游戏：走到工位、接听虚构来电，和朋友一起在下班前冲业绩。**
+### 浏览器在线合作呼叫中心派对游戏 · 职场模拟 · 黑色幽默
+
+**接听虚构 AI 来电，和队友语音协作，管理时间，达成每日业绩并撑过绩效考核。**
 
 [English](README.md) · [简体中文](README.zh-CN.md)
 
@@ -25,7 +29,22 @@
   <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
 </p>
 
+[![游戏玩法预览](docs/media/trailer-preview.gif)](https://scam.gamefun.world)
+
+</div>
+
+《Scam With Your Friends — Web》是一款非官方、免费的开源网页游戏：在混乱的虚构**呼叫中心**里玩**在线合作**的**职场模拟**。走到工位，接听会根据你的话做出反应的 **AI 来电**（打字，或在浏览器支持时用**语音控制**），完成桌面任务赚取游戏币。在**时间管理**循环中追赶**每日业绩**，应对办公室事故，迎接老板的**绩效考核**。最多四位好友一起玩，是一款**黑色幽默派对游戏**。所有内容均为虚构，请勿输入真实支付资料。
+
 ![项目概览](docs/media/cover.svg)
+
+## 为什么好玩
+
+- **最多四人在线合作** — 共享天数与业绩，各自处理来电，支持就近队友语音。
+- **AI 来电** — 八种虚构性格；无需密钥即可用离线剧情，也可启用 AI 自由对话。
+- **高压时间管理** — 七天、递增的每日业绩、商店升级与需要领取的配送。
+- **办公室混乱** — 病毒、停电、火灾和突袭打乱节奏。
+- **黑色幽默基调** — 荒诞的虚构情景和严厉的老板，不收集任何真实资料。
+- **无需安装** — 浏览器即玩，支持五种界面语言，可自部署到 Cloudflare。
 
 ## 宣传动画
 
@@ -37,39 +56,37 @@ https://github.com/user-attachments/assets/5013ead8-cf12-4d1b-89f5-1818df086993
 
 **[立即试玩 → https://scam.gamefun.world](https://scam.gamefun.world)** — 线上试玩站需 Google 登录或验证邮箱；**开源代码默认不启用账户**。
 
-这是受《Scam With Your Friends》启发的非官方网页实验，不是原作，也不是官方移植。见 [素材来源与许可证](THIRD_PARTY_NOTICES.md)。游戏里的卡片、任务编号和资金均为虚构，**请勿输入真实支付资料**。
+这是受 Steam 上《[Scam With Your Friends](https://store.steampowered.com/app/4954910/)》启发的非官方网页实验，不是原作，也不是官方移植，与原作开发者无关。见 [素材来源与许可证](THIRD_PARTY_NOTICES.md)。游戏里的卡片、任务编号和资金均为虚构，**请勿输入真实支付资料**。
 
 ## 怎么玩
 
 1. **坐到工位** — WASD 移动，**E** 入座；手机有虚拟摇杆。
-2. **接听来电** — 管理信任与耐心；可用离线回复按钮，或可选大模型自由对话。
+2. **接听来电** — 观察 AI 来电者，管理信任与耐心；可用离线回复按钮，或可选大模型对话与语音。
 3. **完成桌面任务** — 走完验证步骤才赚到游戏币（切勿使用真实银行卡信息）。
 4. **购物与取货** — 软件立即生效；实体物品需在办公室领取后使用。
-5. **在班次结束前达成当日业绩** — 未达标则本局结束。联机最多四人共享天数；**V** 开启队友语音。
+5. **在班次结束前达成每日业绩**并通过绩效考核 — 未达标则本局结束。联机最多四人共享天数；**V** 开启队友语音。
 
-完整规则见 [玩法说明](docs/GAMEPLAY.md)。
+完整规则见 [玩法说明](docs/GAMEPLAY.md)（[English guide](docs/GAMEPLAY-EN.md)）。
 
 ## 界面预览
 
-| 来电桌面 | Three.js 办公室 | 主菜单 |
+[![截图墙：办公室、来电桌面、主菜单](docs/media/screenshot-wall.png)](https://scam.gamefun.world)
+
+| Three.js 办公室 | 来电桌面 | 主菜单 |
 | --- | --- | --- |
-| [![浏览器桌面与虚构来电](docs/media/desktop.png)](https://scam.gamefun.world) | [![程序化办公室](docs/media/office.png)](https://scam.gamefun.world) | [![主菜单](docs/media/menu.png)](https://scam.gamefun.world) |
+| 走动、入座、购物、取货 | 与 AI 来电者交流并完成任务 | 单人、联机房间码、设置 |
 
-截图来自本仓库实现，使用虚构测试账号和离线对话，不是原作画面。
-
-预览动图：
-
-![宣传预览循环](docs/media/trailer-preview.gif)
+截图来自本仓库实现，使用虚构测试账号和离线对话，不是原作画面。单张：[办公室](docs/media/office.png)、[桌面](docs/media/desktop.png)、[菜单](docs/media/menu.png)。
 
 ## 功能一览
 
 | 系统 | 实现 |
 | --- | --- |
 | 办公室 | 程序化 Three.js 场景、走动、互动、道具与入座动画 |
-| 来电 | 八个来电角色、信任/耐心、离线剧情、可选 AI 对话 |
-| 工作周 | 七天目标、限时业绩、商店、配送、背包、事故与考核 |
-| 语音 | 浏览器语音识别/合成，可选 MiniMax 或 ElevenLabs TTS |
-| 联机 | 最多四人、WebSocket 同步、共享天数/业绩与 WebRTC 语音 |
+| 来电 | 八个 AI 来电角色、信任/耐心、离线剧情、可选 AI 对话 |
+| 工作周 | 七天每日业绩目标、限时、商店、配送、背包、事故与绩效考核 |
+| 语音 | 语音控制（浏览器识别）、队友语音聊天，可选 MiniMax 或 ElevenLabs TTS |
+| 联机 | 最多四人在线合作、WebSocket 同步、共享天数/业绩与 WebRTC 语音 |
 | 账户 | 可选，默认关闭；Google 或验证邮箱/密码（Resend） |
 | 存档 | D1 账号存档、冲突检测与本地恢复/导出 |
 | 语言 | 英语、中文、葡语、日语、西语 |
@@ -131,6 +148,12 @@ npm run check:i18n
 
 欢迎改进手机体验、翻译、无障碍和语音稳定性。见 [贡献说明](CONTRIBUTING.md)。安全问题请按 [SECURITY.md](SECURITY.md) 私下反馈。
 
-觉得有用可以点 Star；清晰的反馈和代码贡献同样重要。
+<div align="center">
+
+### Star · 分享 · 参与贡献
+
+觉得好玩，请 **[给仓库点 Star](https://github.com/mrzh7/scam-with-your-friends-web)**，拉上朋友 **[试玩 Demo](https://scam.gamefun.world)** 并分享，也欢迎提交 Issue 或 Pull Request。
+
+</div>
 
 项目自有代码采用 [MIT](LICENSE)。第三方名称、参考作品与依赖保留各自权利，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。

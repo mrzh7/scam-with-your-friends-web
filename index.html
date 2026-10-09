@@ -3,24 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Scam With Your Friends — Web | Co-op Browser Office Game</title>
+    <title>Scam With Your Friends — Web | Online Co-op AI Call Center Party Game</title>
     <meta
       name="description"
-      content="Play a co-op browser office game with fictional AI callers, Three.js rooms and Cloudflare multiplayer. Unofficial web remake — no real payments."
+      content="Online co-op browser job simulator and dark comedy party game. Run a fictional call center with friends: answer AI callers, use voice chat, manage time, hit the daily quota and survive the performance review. Unofficial fan project."
     />
+    <meta name="keywords" content="online co-op, AI callers, voice chat, job simulator, dark comedy, party game, time management, call center game, daily quota, performance review, browser game" />
     <meta name="theme-color" content="#f3c848" />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://scam.gamefun.world/" />
+    <!-- Single-URL SPA: the UI language switches at runtime (en, zh, pt, ja, es). -->
+    <link rel="alternate" hreflang="en" href="https://scam.gamefun.world/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://scam.gamefun.world/" />
+    <link rel="alternate" hreflang="x-default" href="https://scam.gamefun.world/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Scam With Your Friends — Web" />
-    <meta property="og:title" content="Scam With Your Friends — Web | Co-op Browser Office Game" />
+    <meta property="og:title" content="Scam With Your Friends — Web | Online Co-op AI Call Center Party Game" />
     <meta
       property="og:description"
-      content="Walk the office, answer fictional callers, hit the quota with friends. AI dialogue, Three.js, Cloudflare Durable Objects. Play in your browser."
+      content="Online co-op call center party game: answer fictional AI callers, use voice chat, beat the daily quota and survive the performance review. Dark comedy, time management, in your browser."
     />
     <meta property="og:url" content="https://scam.gamefun.world/" />
     <meta property="og:image" content="https://scam.gamefun.world/og.png" />
@@ -34,10 +39,10 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Scam With Your Friends — Web | Co-op Browser Office Game" />
+    <meta name="twitter:title" content="Scam With Your Friends — Web | Online Co-op AI Call Center Party Game" />
     <meta
       name="twitter:description"
-      content="Co-op browser office game with fictional AI callers, Three.js and Cloudflare multiplayer. Play free in the browser."
+      content="Online co-op job simulator and dark comedy party game with fictional AI callers, voice chat and daily quotas. Play free in the browser."
     />
     <meta name="twitter:image" content="https://scam.gamefun.world/og.png" />
     <meta name="twitter:image:alt" content="Scam With Your Friends — Web trailer poster" />
@@ -49,7 +54,10 @@
         "name": "Scam With Your Friends — Web",
         "alternateName": "Kolkata OS",
         "url": "https://scam.gamefun.world/",
-        "description": "An experimental co-op browser office game with fictional callers, optional AI dialogue, Three.js offices and Cloudflare Durable Objects multiplayer. Unofficial project inspired by Scam With Your Friends.",
+        "description": "An experimental online co-op browser job simulator and dark comedy party game: fictional AI callers, voice chat, time management, daily quotas and performance reviews in a call center office. Unofficial fan project inspired by Scam With Your Friends.",
+        "keywords": "online co-op, AI callers, voice control, job simulator, dark comedy, party game, time management, call center, daily quota, performance review",
+        "inLanguage": ["en", "zh-CN", "pt", "ja", "es"],
+        "playMode": ["SinglePlayer", "MultiPlayer", "CoOp"],
         "image": "https://scam.gamefun.world/og.png",
         "genre": ["Simulation", "Multiplayer", "Office"],
         "gamePlatform": ["Web browser"],
@@ -71,6 +79,22 @@
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <main style="max-width:640px;margin:40px auto;padding:0 20px;font-family:system-ui,sans-serif;line-height:1.5">
+        <h1>Scam With Your Friends — Web</h1>
+        <p>An online co-op call center party game and job simulator in your browser. Answer fictional AI callers, use voice chat with up to four players, manage your time, hit the daily quota and survive the performance review. Dark comedy, all fictional.</p>
+        <p><strong>Play:</strong> <a href="https://scam.gamefun.world/">https://scam.gamefun.world/</a> (JavaScript required)</p>
+        <h2>How to play</h2>
+        <ul>
+          <li>Walk to your desk and press E to sit; WASD moves.</li>
+          <li>Answer the call and manage the caller's trust and patience.</li>
+          <li>Finish the desktop task to earn in-game money, then shop for upgrades.</li>
+          <li>Survive office accidents and reach the daily quota before the shift ends.</li>
+          <li>Co-op: up to four players share the day; press V for team voice.</li>
+        </ul>
+        <p><small>Unofficial fan project, not the original game. All callers, cards, IDs and money are fictional. Never enter real payment details.</small></p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

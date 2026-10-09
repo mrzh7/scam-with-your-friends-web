@@ -1,6 +1,10 @@
+<div align="center">
+
 # Scam With Your Friends — Web
 
-**A co-op browser office game: walk to your desk, answer fictional callers, and hit the quota before the shift ends.**
+### Online co-op call center party game · job simulator · dark comedy, in your browser
+
+**Answer fictional AI callers, talk with your team over voice, manage your time, hit the daily quota and survive the performance review.**
 
 [简体中文](README.zh-CN.md) · [English](README.md)
 
@@ -25,7 +29,22 @@
   <a href=".github/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" /></a>
 </p>
 
+[![Scam With Your Friends — Web gameplay preview](docs/media/trailer-preview.gif)](https://scam.gamefun.world)
+
+</div>
+
+Scam With Your Friends — Web is an unofficial, free browser game and open-source project: an **online co-op job simulator** set in a chaotic fictional **call center**. Walk to your desk, answer **AI callers** who react to what you say (typed, or spoken with **voice control** where your browser supports it), and finish desktop tasks for in-game money. Race the clock in a **time management** loop with a **daily quota**, dodge office accidents, and face a **performance review** from the boss. It plays like a **dark comedy party game** for up to four friends. Everything is fictional; never enter real payment details.
+
 ![Scam With Your Friends — Web overview](docs/media/cover.svg)
+
+## Why play
+
+- **Online co-op for up to four** — share the day and quota, each handling your own calls, with proximity team voice.
+- **AI callers** — eight fictional personalities; offline scripted replies work without any key, optional AI for free conversation.
+- **Time management under pressure** — seven days, rising daily quotas, a shop with upgrades and deliveries to collect.
+- **Office chaos** — virus, blackout, fire and raid accidents break up the routine.
+- **Dark comedy tone** — absurd, fictional scenarios and a ruthless boss; nothing real is collected.
+- **Nothing to install** — runs in a browser; five UI languages; self-host on Cloudflare for free-tier experiments.
 
 ## Watch the trailer
 
@@ -37,39 +56,37 @@ Cinematic animation built from this project's office, characters and portraits, 
 
 **[Play the hosted demo → https://scam.gamefun.world](https://scam.gamefun.world)** — Google login or verified email on the demo; **source defaults to no accounts**.
 
-This is an experimental, unofficial project inspired by [Scam With Your Friends](https://store.steampowered.com/app/4954910/). It is not the original game or an official port. See [provenance and licenses](THIRD_PARTY_NOTICES.md). All task IDs, cards, funds and events are fictional. **Do not enter real payment details.**
+This is an experimental, unofficial project inspired by [Scam With Your Friends](https://store.steampowered.com/app/4954910/) on Steam. It is not the original game or an official port, and is not affiliated with its developers. See [provenance and licenses](THIRD_PARTY_NOTICES.md). All task IDs, cards, funds and events are fictional. **Do not enter real payment details.**
 
 ## How to play
 
 1. **Sit at your desk** — WASD to move, **E** to sit. Mobile has on-screen controls.
-2. **Answer the call** — manage trust and patience; use offline reply buttons or optional AI dialogue.
+2. **Answer the call** — read the AI caller, manage trust and patience; use offline reply buttons, or optional AI dialogue and voice.
 3. **Complete the desktop task** — finish verification steps for in-game money (never use real card data).
 4. **Shop and collect deliveries** — upgrades install immediately; physical items must be picked up in the office.
-5. **Hit the daily quota** before the shift timer ends — miss it and the run is over. Co-op: up to four players share the day; **V** for team voice.
+5. **Hit the daily quota** before the shift timer ends and pass the performance review — miss it and the run is over. Co-op: up to four players share the day; **V** for team voice.
 
-Full rules: [Gameplay guide](docs/GAMEPLAY-EN.md).
+Full rules: [Gameplay guide](docs/GAMEPLAY-EN.md) — round loop, controls, calls and trust, tools, money, shop items, accidents, co-op voice and audio notes.
 
 ## Screenshots
 
-| Incoming call desk | Three.js office | Main menu |
+[![Screenshot wall: office, call desk and main menu](docs/media/screenshot-wall.png)](https://scam.gamefun.world)
+
+| Three.js office | Incoming call desk | Main menu |
 | --- | --- | --- |
-| [![Browser desktop with a fictional caller](docs/media/desktop.png)](https://scam.gamefun.world) | [![Procedural office](docs/media/office.png)](https://scam.gamefun.world) | [![Main menu](docs/media/menu.png)](https://scam.gamefun.world) |
+| Walk, sit, shop and collect deliveries | Talk to AI callers, finish the task | Solo, co-op room code, settings |
 
-Captured from this implementation with a synthetic test account and offline dialogue — not original-game footage.
-
-Preview GIF:
-
-![Trailer preview loop](docs/media/trailer-preview.gif)
+Captured from this implementation with a synthetic test account and offline dialogue — not original-game footage. Individual shots: [office](docs/media/office.png), [desktop](docs/media/desktop.png), [menu](docs/media/menu.png).
 
 ## Features
 
 | System | Implementation |
 | --- | --- |
 | Office | Procedural Three.js room, movement, interaction, equipment and seated animation |
-| Calls | Eight caller profiles, trust/patience, scripted offline responses, optional AI dialogue |
-| Workweek | Seven days, timed quotas, shop, delivery collection, inventory, accidents and review |
-| Voice | Speech recognition where supported, browser speech, optional MiniMax or ElevenLabs TTS |
-| Co-op | Up to four players, WebSocket state, shared day/quota and WebRTC voice |
+| Calls | Eight AI caller profiles, trust/patience, scripted offline responses, optional AI dialogue |
+| Workweek | Seven days, daily quota timers, shop, delivery collection, inventory, accidents and performance review |
+| Voice | Voice control via speech recognition where supported, team voice chat, optional MiniMax or ElevenLabs TTS |
+| Co-op | Online co-op for up to four players, WebSocket state, shared day/quota and WebRTC voice |
 | Accounts | Optional; disabled by default. Google or verified email/password via Resend |
 | Saves | D1 account saves, revision conflict detection and local recovery/export |
 | Languages | English, Chinese, Portuguese, Japanese, Spanish |
@@ -131,6 +148,12 @@ See [acceptance notes](docs/ACCEPTANCE.md), [SECURITY.md](SECURITY.md) and [data
 
 Useful areas: mobile compatibility, natural translations, accessibility and reliable voice reconnection. See [CONTRIBUTING.md](CONTRIBUTING.md). Security issues: [SECURITY.md](SECURITY.md).
 
-If you find the project useful, a star helps others discover it.
+<div align="center">
+
+### Star · Share · Contribute
+
+If you enjoy it, **[star the repo](https://github.com/mrzh7/scam-with-your-friends-web)**, **[play the demo](https://scam.gamefun.world)** with friends and share it, or open an issue or pull request.
+
+</div>
 
 Project-owned code is [MIT](LICENSE). Third-party names, reference works and dependencies retain their own rights — see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
