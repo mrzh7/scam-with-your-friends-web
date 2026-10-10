@@ -6,6 +6,8 @@
 
 <sub>原作介绍（译文） · [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)</sub>
 
+Scam With Your Friends Web 是受原作启发的**非官方开源网页版**：在 3D 办公室里和朋友合作，接听虚构 AI 来电、语音聊天并完成每日业绩。使用 React、Three.js 和 Cloudflare Workers 开发，支持本机运行和自行部署。
+
 ### 浏览器在线合作呼叫中心派对游戏 · 职场模拟 · 黑色幽默
 
 **接听虚构 AI 来电，和队友语音协作，管理时间，达成每日业绩并撑过绩效考核。**
@@ -213,6 +215,20 @@ npm run check:i18n
 </tr></table>
 
 <p align="center">⚠️ 请扫描上方二维码。打赏完全自愿。我绝不会私信给你新地址——请只信任本 README 中的二维码。</p>
+
+## 常见问题
+
+### 这是官方的 Scam With Your Friends 吗？
+
+不是。这是独立开发的同人网页重制项目，不是 Steam 正式版或官方移植版，与原作开发团队没有关联。
+
+### 不注册、不配置 AI Key 能玩吗？
+
+可以。源码默认关闭账户系统，并提供离线剧情来电。AI 自由对话和可选云端 TTS 需要自行配置服务商，调用可能收费。参见[本机启动指南](docs/QUICKSTART.zh-CN.md)。
+
+### 可以自己部署多人联机版本吗？
+
+可以。项目包含合作房间、WebRTC 语音和进度保存。[部署指南](docs/DEPLOYMENT.zh-CN.md)介绍了 Cloudflare Workers、D1、Durable Objects，以及可选的 Google 和邮箱登录配置。
 
 ## Star 历史
 

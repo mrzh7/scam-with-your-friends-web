@@ -6,6 +6,8 @@
 
 <sub>Descripción del juego original (traducción) · [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)</sub>
 
+Scam With Your Friends Web es una **recreación no oficial y de código abierto para navegador**, inspirada en Scam With Your Friends. Juega en equipo en una oficina 3D, habla con personajes de IA ficticios y cumple las cuotas diarias. Está hecho con React, Three.js y Cloudflare Workers y permite ejecutarlo localmente o alojarlo por tu cuenta.
+
 ### Juego de fiesta cooperativo en línea de centro de llamadas · simulador de trabajo · comedia negra, en tu navegador
 
 **Contesta llamantes de IA ficticios, habla por voz con tu equipo, gestiona tu tiempo, cumple la cuota diaria y sobrevive a la evaluación de desempeño.**
@@ -213,6 +215,20 @@ Consulta las [notas de aceptación](docs/ACCEPTANCE.md), [SECURITY.md](SECURITY.
 </tr></table>
 
 <p align="center">⚠️ Escanea el QR de arriba. La propina es voluntaria. Nunca enviaré una dirección nueva por DM — confía solo en los códigos de este README.</p>
+
+## Preguntas frecuentes
+
+### ¿Es el juego oficial Scam With Your Friends?
+
+No. Es una versión web independiente hecha por un fan, sin relación con los desarrolladores originales. No es el lanzamiento de Steam ni una adaptación oficial.
+
+### ¿Necesito una cuenta o una clave de API de IA?
+
+No para empezar. Las cuentas están desactivadas por defecto y hay llamadas con guion sin IA. El diálogo libre con IA y el TTS opcional en la nube necesitan configuración propia y pueden tener costes. Consulta el [inicio rápido](docs/QUICKSTART.md).
+
+### ¿Puedo alojar la versión multijugador?
+
+Sí. Incluye salas cooperativas, voz por WebRTC y progreso persistente. La [guía de despliegue](docs/DEPLOYMENT.md) explica Workers, D1, Durable Objects y el acceso opcional con Google o correo electrónico.
 
 ## Historial de Stars
 

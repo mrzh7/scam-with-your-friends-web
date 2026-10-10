@@ -6,6 +6,8 @@
 
 <sub>Original game description · [Steam](https://store.steampowered.com/app/4954910/Scam_With_Your_Friends/)</sub>
 
+Scam With Your Friends Web is an **open-source, unofficial browser remake** inspired by Scam With Your Friends. Play a co-op AI call center game with a 3D office, fictional callers, voice chat and daily quotas. Built with React, Three.js and Cloudflare Workers; run it locally or self-host it.
+
 ### Online co-op call center party game · job simulator · dark comedy, in your browser
 
 **Answer fictional AI callers, talk with your team over voice, manage your time, hit the daily quota and survive the performance review.**
@@ -213,6 +215,20 @@ Useful areas: mobile compatibility, natural translations, accessibility and reli
 </tr></table>
 
 <p align="center">⚠️ Scan the QR above. Tips are voluntary. I will never DM you a new address — only trust the codes in this README.</p>
+
+## Frequently asked questions
+
+### Is this the official Scam With Your Friends game?
+
+No. This is an independent fan-made web version, not the Steam release or an official port. It is not affiliated with the original developers.
+
+### Can I play without an account or an AI API key?
+
+Yes. The source defaults to accounts disabled and includes offline scripted calls. Free-form AI dialogue and optional cloud TTS require your own provider configuration; provider usage may cost money. See the [quick start](docs/QUICKSTART.md).
+
+### Can I host a multiplayer browser game myself?
+
+Yes. The project includes co-op rooms, WebRTC voice chat and persistent progress. Follow the [deployment guide](docs/DEPLOYMENT.md) for Cloudflare Workers, D1 and Durable Objects, including optional Google/email login.
 
 ## Star History
 
