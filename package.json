@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "jose": "^6.2.12",
-    "lucide-react": "^0.468.0",
+    "lucide-react": "^1.52.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "three": "^0.180.0"
