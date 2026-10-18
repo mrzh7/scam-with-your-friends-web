@@ -2,6 +2,7 @@ import {cloneKey,createClone,removeClone} from './voices';
 import {emailVerified,requestVerification,verifyEmail} from './email';
 import {normalizeLocale} from '../src/i18n/locales';
 import {adminSettings,isAdministrator,runtimeEnv,reservedAdminEmail} from './admin';
+import {adminReports} from './adminReports';
 import { accountsEnabled, currentPlayer, anonymousSession, currentUser, digest, passwordHash, constantEqual, publicUser, rateLimit, sessionCookie, type Env, type UserRow } from './auth';
 import { parseSave } from '../src/game/engine';
 import { aiConfigured, generateDialogue, probeAI } from './dialogue';
@@ -25,6 +26,7 @@ export default {
   if (Number(request.headers.get('Content-Length')) > (path==='/api/voices'?8*1024*1024:100000)) return json({ error: '请求过大' }, 413);
   try {
    if (path === '/api/admin/settings') return adminSettings(request,env);
+   if (path === '/api/admin/users' || path === '/api/admin/stats') return await adminReports(request,env,path.endsWith('/users')?'users':'stats');
    if (path === '/api/config' || path === '/api/dialogue' || path === '/api/speech' || path === '/api/ai/test' || path === '/api/voices') env = await runtimeEnv(env);
    const withAccounts = accountsEnabled(env);
    if (path === '/api/session/anonymous' && request.method === 'POST') {
