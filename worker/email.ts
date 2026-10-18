@@ -5,6 +5,7 @@ const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{'Cache
 export const emailVerified=(user:UserRow)=>!user.email || !!user.email_verified_at;
 export const mailConfigured=(env:Env)=>!!(env.RESEND_API_KEY?.trim()&&env.EMAIL_FROM?.trim()&&env.AUTH_ORIGIN?.startsWith('https://'));
 const mailText:Record<Locale,[string,string,string]>={
+ ru:['Подтвердите адрес электронной почты','Откройте ссылку, чтобы подтвердить адрес электронной почты и задать пароль. Ссылка действительна 24 часа.','Если вы не отправляли этот запрос, проигнорируйте письмо.'],
  en:['Verify your email','Open this link to verify your email and set your password. It expires in 24 hours.','If you did not request this, ignore this email.'],
  zh:['验证邮箱','打开以下链接，验证邮箱并设置密码。链接 24 小时内有效。','如果不是你发起的请求，请忽略这封邮件。'],
  pt:['Confirme seu e-mail','Abra este link para confirmar seu e-mail e definir sua senha. Ele expira em 24 horas.','Se você não fez esta solicitação, ignore este e-mail.'],
