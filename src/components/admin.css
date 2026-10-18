@@ -1,0 +1,40 @@
+body:has(.admin-page){overflow:auto}
+.admin-page{width:calc(100% - 32px);max-width:1180px;line-height:1.6;min-height:calc(100dvh - 64px)}
+.admin-page h1{font-size:28px;margin:8px 0 20px}
+.admin-page h2{font-size:21px;margin:0}
+.admin-page h3{font-size:17px;margin:0 0 8px}
+.admin-page p{margin:12px 0}
+.admin-page button{border-radius:5px;font-size:14px;min-height:44px}
+.admin-page button:disabled{opacity:.5;cursor:not-allowed}
+.admin-page :is(button,input,summary):focus-visible{outline:3px solid #bd8b2b;outline-offset:3px}
+.admin-nav{display:flex;flex-wrap:wrap;gap:8px;border-bottom:1px solid #b7c2bd;padding-bottom:18px;margin-bottom:24px}
+.admin-nav button{background:#e1e8df;color:#233c45;border:1px solid transparent}
+.admin-nav button[aria-pressed=true]{background:#275956;color:white;border-color:#275956}
+.admin-section-heading{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.admin-note,.admin-definitions{font-size:13px;color:#526a68}
+.admin-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:22px 0}
+.admin-metrics>div{background:#fffdf7;border:1px solid #d4ddd2;border-radius:8px;padding:18px 20px}
+.admin-metrics dt{font-size:13px;color:#526a68}
+.admin-metrics dd{font-size:32px;font-weight:700;margin:8px 0 0;font-variant-numeric:tabular-nums;line-height:1.2}
+.admin-trend{margin-top:24px;padding:22px;background:#fffdf7;border:1px solid #d4ddd2;border-radius:8px}
+.admin-bars{display:flex;align-items:flex-end;gap:clamp(2px,1vw,10px);height:175px;border-bottom:1px solid #b7c2bd;margin-top:16px}
+.admin-bars>div{flex:1;min-width:0;text-align:center;font-size:11px;font-variant-numeric:tabular-nums}
+.admin-bars i{display:block;min-height:2px;background:#3c7e72;border-radius:3px 3px 0 0;margin-top:6px}
+.admin-chart-dates{display:flex;justify-content:space-between;color:#526a68;font-size:12px;margin:8px 0 20px}
+.admin-trend summary{cursor:pointer}
+.admin-table-wrap{overflow-x:auto;margin:14px 0;max-width:100%;border:1px solid #cbd5cb;border-radius:6px}
+.admin-page table{width:100%;border-collapse:collapse;text-align:left;font-size:13px;background:#fffdf7}
+.admin-page caption{text-align:left;padding:12px;font-weight:600}
+.admin-page th{background:#e4eade;font-weight:600;white-space:nowrap}
+.admin-page :is(th,td){padding:13px 12px;border-bottom:1px solid #dce2d7;vertical-align:top}
+.admin-page tbody tr:last-child td{border-bottom:0}
+.admin-users-table{min-width:900px}
+.admin-users-table td{max-width:250px;overflow-wrap:anywhere}
+.admin-users-table code{display:block;font-size:11px;color:#62756d;margin-top:4px}
+.admin-page .admin-search{display:flex;align-items:flex-end;gap:12px;border:0;padding:8px 0;margin:14px 0}
+.admin-search label{flex:1;max-width:550px;font-size:13px}
+.admin-search input{min-width:0;border-radius:5px;min-height:44px}
+.admin-pagination{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:18px}
+.admin-empty{padding:36px;text-align:center;background:#fffdf7;border-radius:6px}
+.admin-services{max-width:800px}
+@media(max-width:650px){.admin-page{width:calc(100% - 20px);padding:16px;margin:10px auto;min-height:calc(100dvh - 20px)}.admin-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.admin-metrics>div{padding:14px}.admin-metrics dd{font-size:27px}.admin-trend{padding:14px}.admin-bars>div>span{font-size:8px}.admin-pagination{justify-content:center}.admin-page .admin-search{gap:8px}.admin-search button{white-space:nowrap}}
