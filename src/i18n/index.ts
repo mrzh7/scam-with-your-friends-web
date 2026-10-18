@@ -4,9 +4,10 @@ import zh from './catalogs/zh.json';
 import pt from './catalogs/pt.json';
 import ja from './catalogs/ja.json';
 import es from './catalogs/es.json';
+import ru from './catalogs/ru.json';
 import {detectLocale,languageTags,validPreference,type Locale,type LanguagePreference} from './locales';
 export * from './locales';
-const catalogs:Record<Locale,Record<string,string>>={en,zh,pt,ja,es};
+const catalogs:Record<Locale,Record<string,string>>={en,zh,pt,ja,es,ru};
 const storageKey='swyf-language';
 let preference:LanguagePreference='auto';
 try{if(typeof localStorage!=='undefined')preference=validPreference(localStorage.getItem(storageKey));}catch{/* Optional browser storage. */}
