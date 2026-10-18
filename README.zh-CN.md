@@ -14,7 +14,7 @@ Scam With Your Friends Web 是受原作启发的**非官方开源网页版**：�
 
 **接听虚构 AI 来电，和队友语音协作，管理时间，达成每日业绩并撑过绩效考核。**
 
-[English](README.md) · **简体中文** · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md) · [问题反馈](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose)
+[English](README.md) · **简体中文** · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md) · [问题反馈](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ 立即试玩</strong></a>
@@ -96,7 +96,7 @@ Scam With Your Friends Web 是受原作启发的**非官方开源网页版**：�
 | 联机 | 最多四人在线合作、WebSocket 同步、共享天数/业绩与 WebRTC 语音 |
 | 账户 | 可选，默认关闭；Google 或验证邮箱/密码（Resend） |
 | 存档 | D1 账号存档、冲突检测与本地恢复/导出 |
-| 语言 | 英语、中文、葡语、日语、西语 |
+| 语言 | 英语、中文、葡语、日语、西语、俄语 |
 
 ## 为什么好玩
 
@@ -105,7 +105,7 @@ Scam With Your Friends Web 是受原作启发的**非官方开源网页版**：�
 - **高压时间管理** — 七天、递增的每日业绩、商店升级与需要领取的配送。
 - **办公室混乱** — 病毒、停电、火灾和突袭打乱节奏。
 - **黑色幽默基调** — 荒诞的虚构情景和严厉的老板，不收集任何真实资料。
-- **无需安装** — 浏览器即玩，支持五种界面语言，可自部署到 Cloudflare。
+- **无需安装** — 浏览器即玩，支持六种界面语言，可自部署到 Cloudflare。
 
 ## 宣传动画
 

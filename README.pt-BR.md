@@ -14,7 +14,7 @@ Scam With Your Friends Web é uma **recriação não oficial e de código aberto
 
 **Atenda chamadores de IA fictícios, converse por voz com sua equipe, gerencie o tempo, bata a meta diária e sobreviva à avaliação de desempenho.**
 
-[English](README.md) · [简体中文](README.zh-CN.md) · **Português** · [Español](README.es.md) · [日本語](README.ja.md) · [Comentários](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose)
+[English](README.md) · [简体中文](README.zh-CN.md) · **Português** · [Español](README.es.md) · [日本語](README.ja.md) · [Comentários](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ Jogar a demo</strong></a>
@@ -94,7 +94,7 @@ Capturadas desta implementação com uma conta de teste sintética e diálogo of
 | Co-op | Co-op online para até quatro jogadores, estado via WebSocket, dia/meta compartilhados e voz WebRTC |
 | Contas | Opcional; desativadas por padrão. Google ou e-mail/senha verificado via Resend |
 | Saves | Saves de conta no D1, detecção de conflito de revisão e recuperação/exportação local |
-| Idiomas | Inglês, chinês, português, japonês, espanhol |
+| Idiomas | Inglês, chinês, português, japonês, espanhol, russo |
 
 ## Por que jogar
 
@@ -103,7 +103,7 @@ Capturadas desta implementação com uma conta de teste sintética e diálogo of
 - **Gestão de tempo sob pressão** — sete dias, metas diárias crescentes, uma loja com melhorias e entregas para retirar.
 - **Caos no escritório** — acidentes de vírus, apagão, incêndio e batida policial quebram a rotina.
 - **Tom de comédia sombria** — cenários absurdos e fictícios e um chefe implacável; nada real é coletado.
-- **Nada para instalar** — roda no navegador; cinco idiomas de interface; hospede você mesmo no Cloudflare para experimentos no plano gratuito.
+- **Nada para instalar** — roda no navegador; seis idiomas de interface; hospede você mesmo no Cloudflare para experimentos no plano gratuito.
 
 ## Assista ao trailer
 

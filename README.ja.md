@@ -14,7 +14,7 @@ Scam With Your Friends Web は、原作に着想を得た**非公式・オープ
 
 **架空の AI 発信者からの電話に出て、チームとボイスチャットで連携し、時間を管理して、1 日のノルマを達成し、人事評価を乗り切ろう。**
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · **日本語** · [フィードバック](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose)
+[English](README.md) · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · **日本語** · [フィードバック](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ デモをプレイ</strong></a>
@@ -94,7 +94,7 @@ Scam With Your Friends Web は、原作に着想を得た**非公式・オープ
 | 協力プレイ | 最大 4 人のオンライン協力プレイ、WebSocket による状態同期、共有の日/ノルマ、WebRTC ボイス |
 | アカウント | 任意。既定では無効。Google、または Resend による認証済みメール/パスワード |
 | セーブ | D1 のアカウントセーブ、リビジョン競合の検出、ローカルでの復旧/エクスポート |
-| 言語 | 英語、中国語、ポルトガル語、日本語、スペイン語 |
+| 言語 | 英語、中国語、ポルトガル語、日本語、スペイン語、ロシア語 |
 
 ## 遊ぶ理由
 
@@ -103,7 +103,7 @@ Scam With Your Friends Web は、原作に着想を得た**非公式・オープ
 - **プレッシャーの中の時間管理** — 7 日間、上がり続ける 1 日のノルマ、アップグレードのあるショップ、受け取る配達物。
 - **オフィスの大混乱** — ウイルス、停電、火災、摘発といった事故が日常を中断します。
 - **ブラックコメディの雰囲気** — 不条理で架空のシナリオと容赦ない上司。実際の情報は一切収集しません。
-- **インストール不要** — ブラウザーで動作。UI は 5 言語対応。Cloudflare の無料枠で自前ホスティングも試せます。
+- **インストール不要** — ブラウザーで動作。UI は 6 言語対応。Cloudflare の無料枠で自前ホスティングも試せます。
 
 ## トレーラーを見る
 
