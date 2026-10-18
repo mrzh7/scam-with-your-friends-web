@@ -2,7 +2,7 @@
 
 The admin page now includes a user directory and operations overview alongside provider settings. See [Admin reports](ADMIN-REPORTS.md) for fields, metric definitions and API details. Existing account defaults, administrator authorization and provider settings are unchanged; reports remain disabled when accounts are disabled or ADMIN_EMAIL is unset.
 
-Locales: English (en), Chinese (zh), Portuguese (pt), Japanese (ja), Spanish (es). Environment detection supplies the initial locale; users can override it, and account saves retain their preference. Dialogue prompts request the selected language directly. TTS speaks the supplied reply in that language; language selection is not a Chinese-then-translate pipeline. Browser recognition uses the corresponding language tag, subject to browser support.
+Locales: English (en), Chinese (zh), Portuguese (pt), Japanese (ja), Spanish (es), Russian (ru). Environment detection supplies the initial locale; users can override it, and account saves retain their preference. Dialogue prompts request the selected language directly. TTS speaks the supplied reply in that language; language selection is not a Chinese-then-translate pipeline. Browser recognition uses the corresponding language tag, subject to browser support.
 
 Administrator access is checked by the Worker on /admin and /api/admin/settings. ADMIN_EMAIL must match the session owner's verified Google identity. If it is missing, access is denied. Keep private credentials out of client code and do not rely on hiding URLs for authorization.
 
