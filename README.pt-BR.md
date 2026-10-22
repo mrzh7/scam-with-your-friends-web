@@ -14,7 +14,7 @@ Scam With Your Friends Web é uma **recriação não oficial e de código aberto
 
 **Atenda chamadores de IA fictícios, converse por voz com sua equipe, gerencie o tempo, bata a meta diária e sobreviva à avaliação de desempenho.**
 
-[English](README.md) · [简体中文](README.zh-CN.md) · **Português** · [Español](README.es.md) · [日本語](README.ja.md) · [Comentários](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
+[English](README.md) · [简体中文](README.zh-CN.md) · **Português** · [Español](README.es.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [Comentários](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ Jogar a demo</strong></a>
