@@ -7,7 +7,7 @@ import type {Call} from '../src/game/engine';
 import type {Env} from '../worker/auth';
 afterEach(()=>{setLanguage('auto');vi.unstubAllGlobals();});
 it('detects Russian regional tags and persists an explicit Russian preference',()=>{
- expect(detectLocale(['de-DE','ru-RU','en-US'])).toBe('ru');expect(normalizeLocale('ru_BY')).toBe('ru');expect(validPreference('ru')).toBe('ru');
+ expect(detectLocale(['fr-FR','ru-RU','en-US'])).toBe('ru');expect(normalizeLocale('ru_BY')).toBe('ru');expect(validPreference('ru')).toBe('ru');
  const storage=new Map();vi.stubGlobal('localStorage',{setItem:(k:string,v:string)=>storage.set(k,v)});vi.stubGlobal('navigator',{languages:['en-US']});setLanguage('ru');expect(getLocale()).toBe('ru');expect(storage.get('swyf-language')).toBe('ru');
  expect(t('打开 {0}',['GAME-TEST-123'])).toContain('GAME-TEST-123');expect(t('网站管理')).toMatch(/[А-Яа-яЁё]/);
 });

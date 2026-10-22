@@ -56,7 +56,7 @@ export async function generateDialogue(env: Env, call: Call, text: string, fetch
    try { payload = await response.json(); } catch { throw new DialogueResponseError('upstream', signal.aborted ? 'AI 响应超时，请重试本条应答。' : 'AI 服务返回了无法识别的响应。', false); }
    const result = parseDialogueResponse(payload);
    if (call.caseFile && (result.intent === undefined || result.contradiction === undefined)) throw new DialogueResponseError('invalid', 'AI 返回内容未通过验证。');
-   if (['en','pt','es'].includes(locale) && /[\u3400-\u9fff]/.test(result.reply)) throw new DialogueResponseError('language','AI replied in the wrong language. Please retry.');
+   if (['en','pt','es','de'].includes(locale) && /[\u3400-\u9fff]/.test(result.reply)) throw new DialogueResponseError('language','AI replied in the wrong language. Please retry.');
    validateCallerRole(call, text, result.reply);
    validateCallerIdentifiers(call, result.reply);
    return { callCode: call.code, callId: call.id, turn: call.revision || 0, ...result };

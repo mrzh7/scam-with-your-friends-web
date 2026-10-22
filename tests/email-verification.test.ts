@@ -22,7 +22,8 @@ describe('Email ownership verification',()=>{
   ['pt','Confirme seu e-mail','Abra este link'],
   ['ja','メールアドレスの確認','以下のリンク'],
   ['es','Verifica tu correo','Abre este enlace'],
-  ['ru','Подтвердите адрес электронной почты','Откройте ссылку']
+  ['ru','Подтвердите адрес электронной почты','Откройте ссылку'],
+  ['de','E-Mail bestätigen','Öffne diesen Link']
  ])('sends the subject and body in the selected %s language without old branding',async(locale,subject,body)=>{
   const r=await app.fetch(req('/api/auth/register',{...registration,locale}),env,context);expect(r.status).toBe(202);
   const payload=JSON.parse(mail.mock.calls[0][1].body);expect(payload.subject).toBe(subject);expect(payload.text).toContain(body);expect(JSON.stringify(payload)).not.toContain('Kolkata OS');

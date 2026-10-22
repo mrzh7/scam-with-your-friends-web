@@ -10,7 +10,8 @@ const mailText:Record<Locale,[string,string,string]>={
  zh:['验证邮箱','打开以下链接，验证邮箱并设置密码。链接 24 小时内有效。','如果不是你发起的请求，请忽略这封邮件。'],
  pt:['Confirme seu e-mail','Abra este link para confirmar seu e-mail e definir sua senha. Ele expira em 24 horas.','Se você não fez esta solicitação, ignore este e-mail.'],
  ja:['メールアドレスの確認','以下のリンクを開き、メールアドレスを確認してパスワードを設定してください。有効期限は24時間です。','心当たりがない場合は、このメールを無視してください。'],
- es:['Verifica tu correo','Abre este enlace para verificar tu correo y establecer tu contraseña. Caduca en 24 horas.','Si no lo solicitaste, ignora este mensaje.']
+ es:['Verifica tu correo','Abre este enlace para verificar tu correo y establecer tu contraseña. Caduca en 24 horas.','Si no lo solicitaste, ignora este mensaje.'],
+ de:['E-Mail bestätigen','Öffne diesen Link, um deine E-Mail zu bestätigen und ein Passwort festzulegen. Der Link ist 24 Stunden gültig.','Wenn du das nicht angefordert hast, ignoriere diese E-Mail.']
 };
 const queued={ok:true,verificationRequired:true};
 export async function sendVerification(request:Request,env:Env,user:UserRow,locale:unknown,fetcher:typeof fetch=fetch){

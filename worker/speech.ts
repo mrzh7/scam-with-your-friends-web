@@ -64,7 +64,7 @@ export async function synthesizeSpeech(env: Env, input: {text: string; person: n
  if (config.provider === 'minimax') {
   if (!minimaxBases.includes(config.base)) throw new Error('语音：MiniMax 接入地址无效。');
   url = config.base + '/t2a_v2'; headers = {Authorization:`Bearer ${env.TTS_API_KEY}`, 'Content-Type':'application/json'};
-  body = {model:config.model, text:input.text, stream:true, stream_options:{exclude_aggregated_audio:true}, language_boost:({en:'English',zh:'Chinese',pt:'Portuguese',ja:'Japanese',es:'Spanish',ru:'Russian'}[input.locale || 'zh']), voice_setting:{voice_id:voice, speed:Math.min(1.3,speed*profile.rate), vol:1, pitch:0}, audio_setting:{sample_rate:24000,format:'pcm',channel:1}};
+  body = {model:config.model, text:input.text, stream:true, stream_options:{exclude_aggregated_audio:true}, language_boost:({en:'English',zh:'Chinese',pt:'Portuguese',ja:'Japanese',es:'Spanish',ru:'Russian',de:'German'}[input.locale || 'zh']), voice_setting:{voice_id:voice, speed:Math.min(1.3,speed*profile.rate), vol:1, pitch:0}, audio_setting:{sample_rate:24000,format:'pcm',channel:1}};
  } else {
   url = 'https://api.elevenlabs.io/v1/text-to-speech/' + encodeURIComponent(voice) + '/stream?output_format=pcm_24000';
   headers = {'xi-api-key':env.TTS_API_KEY!, 'Content-Type':'application/json'};
