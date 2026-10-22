@@ -9,7 +9,7 @@ import type {Env} from '../worker/auth';
 import {readFileSync} from 'node:fs';
 afterEach(()=>{setLanguage('auto');vi.unstubAllGlobals();});
 describe('Localization contracts',()=>{
- it('detects supported browser languages in order, including regional variants',()=>{expect(detectLocale(['de-DE','pt-PT','en-US'])).toBe('pt');expect(detectLocale(['zh-Hant-HK'])).toBe('zh');expect(detectLocale(['ja-JP'])).toBe('ja');expect(detectLocale(['es-MX'])).toBe('es');expect(detectLocale(['fr'])).toBe('en');expect(normalizeLocale('malicious-prompt')).toBe('en');});
+ it('detects supported browser languages in order, including regional variants',()=>{expect(detectLocale(['de-DE','pt-PT','en-US'])).toBe('de');expect(detectLocale(['nl-NL','pt-PT','en-US'])).toBe('pt');expect(detectLocale(['zh-Hant-HK'])).toBe('zh');expect(detectLocale(['ja-JP'])).toBe('ja');expect(detectLocale(['es-MX'])).toBe('es');expect(detectLocale(['fr'])).toBe('en');expect(normalizeLocale('malicious-prompt')).toBe('en');});
  it('honors explicit choice over the browser and persists the preference',()=>{const storage=new Map();vi.stubGlobal('localStorage',{setItem:(k:string,v:string)=>storage.set(k,v)});vi.stubGlobal('navigator',{languages:['ja-JP']});setLanguage('pt');expect(getLocale()).toBe('pt');expect(storage.get('swyf-language')).toBe('pt');setLanguage('auto');expect(getPreference()).toBe('auto');expect(getLocale()).toBe('ja');});
  it('has all messages and unchanged interpolation tokens in every catalog',()=>{const keys=JSON.parse(readFileSync('src/i18n/messages.json','utf8')) as string[];for(const locale of locales){const catalog=JSON.parse(readFileSync('src/i18n/catalogs/'+locale+'.json','utf8'));for(const key of keys){expect(catalog[key],locale+': '+key).toBeTruthy();expect((catalog[key].match(/\{\d+\}/g)||[]).sort(),locale+': '+key).toEqual((key.match(/\{\d+\}/g)||[]).sort());}}});
  it('translates historical game notices and never changes identifiers',()=>{setLanguage('en');expect(t('任务完成！+$120 已计入今日业绩。')).not.toMatch(/[\u3400-\u9fff]/);expect(t(' 卡号 GAME-CARD-123；安全口令 PIX-456；到期标记 MOON-789。')).toContain('GAME-CARD-123');expect(t('Hello João, reference GAME-TEST-123')).toBe('Hello João, reference GAME-TEST-123');expect(t('打开 {0}', ['Phone'])).toBe('Open Phone');});
@@ -25,7 +25,7 @@ it('translates every composed opening, including the screenshot, in all supporte
  for(const locale of locales){setLanguage(locale);for(let person=0;person<8;person++)for(const scheme of Object.keys(callerSituations) as (keyof typeof callerSituations)[]){
   const source=callOpening(person,scheme),translated=t(source);
   expect(translated).toBe([t(callerGreetings[person]),t(callerSituations[scheme])].join(locale==='zh'||locale==='ja'?'':' '));
-  if(['en','pt','es'].includes(locale))expect(translated).not.toMatch(/[\u3400-\u9fff]/);
+  if(['en','pt','es','de'].includes(locale))expect(translated).not.toMatch(/[\u3400-\u9fff]/);
   if(locale==='zh')expect(translated).toBe(source);
  }}
  setLanguage('en');expect(t(callOpening(0,'identity'))).toContain('Hello');

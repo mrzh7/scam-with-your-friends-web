@@ -77,7 +77,7 @@ describe('Serialized account autosave and local recovery',()=>{
 });
 
 describe('Language preferences in account storage',()=>{
- it.each(['auto','en','zh','pt','ja','es'])('persists %s with the account without exposing AI settings',async language=>{
+ it.each(['auto','en','zh','pt','ja','es','ru','de'])('persists %s with the account without exposing AI settings',async language=>{
   const db=accountDatabase();try{db.sqlite.prepare('INSERT INTO users(id,name,guest,created_at) VALUES (?,?,0,?)').run('locale-user','Locale user',Date.now());const user={id:'locale-user'} as UserRow;
    const result=await writeSave(db.env,user,{userId:user.id,state:newGame(),revision:0,settings:{sound:false,wallpaper:'mountain',language,AI_MODEL:'injected',AI_API_KEY:'not-allowed'}});
    expect(result.status).toBe(200);expect((await readSave(db.env,user.id)).settings).toEqual({sound:false,wallpaper:'mountain',language});
