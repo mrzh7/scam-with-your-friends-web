@@ -98,7 +98,7 @@ Captured from this implementation with a synthetic test account and offline dial
 | Co-op | Online co-op for up to four players, WebSocket state, shared day/quota and WebRTC voice |
 | Accounts | Optional; disabled by default. Google or verified email/password via Resend |
 | Saves | D1 account saves, revision conflict detection and local recovery/export |
-| Languages | English, Chinese, Portuguese, Japanese, Spanish, Russian |
+| Languages | English, Chinese, Portuguese, Japanese, Spanish, Russian, German |
 
 ## Why play
 
@@ -107,7 +107,7 @@ Captured from this implementation with a synthetic test account and offline dial
 - **Time management under pressure** — seven days, rising daily quotas, a shop with upgrades and deliveries to collect.
 - **Office chaos** — virus, blackout, fire and raid accidents break up the routine.
 - **Dark comedy tone** — absurd, fictional scenarios and a ruthless boss; nothing real is collected.
-- **Nothing to install** — runs in a browser; six UI languages; self-host on Cloudflare for free-tier experiments.
+- **Nothing to install** — runs in a browser; seven UI languages; self-host on Cloudflare for free-tier experiments.
 
 ## Watch the trailer
 
