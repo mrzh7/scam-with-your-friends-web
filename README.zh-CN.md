@@ -14,7 +14,7 @@ Scam With Your Friends Web 是受原作启发的**非官方开源网页版**：�
 
 **接听虚构 AI 来电，和队友语音协作，管理时间，达成每日业绩并撑过绩效考核。**
 
-[English](README.md) · **简体中文** · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md) · [问题反馈](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
+[English](README.md) · **简体中文** · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [问题反馈](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ 立即试玩</strong></a>

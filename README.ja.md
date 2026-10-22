@@ -14,7 +14,7 @@ Scam With Your Friends Web は、原作に着想を得た**非公式・オープ
 
 **架空の AI 発信者からの電話に出て、チームとボイスチャットで連携し、時間を管理して、1 日のノルマを達成し、人事評価を乗り切ろう。**
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · **日本語** · [フィードバック](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
+[English](README.md) · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · **日本語** · [Deutsch](README.de.md) · [フィードバック](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ デモをプレイ</strong></a>

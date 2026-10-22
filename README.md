@@ -16,7 +16,7 @@ Scam With Your Friends Web is an **open-source, unofficial browser remake** insp
 
 **Answer fictional AI callers, talk with your team over voice, manage your time, hit the daily quota and survive the performance review.**
 
-**English** · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md) · [Feedback](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
+**English** · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [Feedback](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · [Русский](README.ru.md)
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ Play Demo</strong></a>

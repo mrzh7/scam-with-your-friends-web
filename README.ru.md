@@ -16,7 +16,7 @@ Scam With Your Friends Web — это **неофициальная браузе�
 
 **Отвечайте вымышленным клиентам под управлением ИИ, общайтесь с командой по голосовой связи, управляйте своим временем, выполняйте дневную норму и выживайте на аттестации.**
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md) · [Обратная связь](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · **Русский**
+[English](README.md) · [简体中文](README.zh-CN.md) · [Português](README.pt-BR.md) · [Español](README.es.md) · [日本語](README.ja.md) · [Deutsch](README.de.md) · [Обратная связь](https://github.com/mrzh7/scam-with-your-friends-web/issues/new/choose) · **Русский**
 
 <p align="center">
   <a href="https://scam.gamefun.world"><strong>▶ Играть в демо</strong></a>
