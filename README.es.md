@@ -94,7 +94,7 @@ Capturadas de esta implementación con una cuenta de prueba sintética y diálog
 | Cooperativo | Cooperativo en línea para hasta cuatro jugadores, estado por WebSocket, día/cuota compartidos y voz WebRTC |
 | Cuentas | Opcional; desactivadas por defecto. Google o correo/contraseña verificado mediante Resend |
 | Partidas guardadas | Partidas de cuenta en D1, detección de conflictos de revisión y recuperación/exportación local |
-| Idiomas | Inglés, chino, portugués, japonés, español, ruso |
+| Idiomas | Inglés, chino, portugués, japonés, español, ruso, alemán |
 
 ## Por qué jugar
 
@@ -103,7 +103,7 @@ Capturadas de esta implementación con una cuenta de prueba sintética y diálog
 - **Gestión del tiempo bajo presión** — siete días, cuotas diarias crecientes, una tienda con mejoras y entregas que recoger.
 - **Caos de oficina** — accidentes de virus, apagón, incendio y redada rompen la rutina.
 - **Tono de comedia negra** — escenarios absurdos y ficticios y un jefe implacable; no se recopila nada real.
-- **Sin instalar nada** — funciona en el navegador; seis idiomas de interfaz; autoalójalo en Cloudflare para experimentar con el plan gratuito.
+- **Sin instalar nada** — funciona en el navegador; siete idiomas de interfaz; autoalójalo en Cloudflare para experimentar con el plan gratuito.
 
 ## Mira el tráiler
 

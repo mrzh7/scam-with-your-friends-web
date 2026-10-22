@@ -94,7 +94,7 @@ Capturadas desta implementação com uma conta de teste sintética e diálogo of
 | Co-op | Co-op online para até quatro jogadores, estado via WebSocket, dia/meta compartilhados e voz WebRTC |
 | Contas | Opcional; desativadas por padrão. Google ou e-mail/senha verificado via Resend |
 | Saves | Saves de conta no D1, detecção de conflito de revisão e recuperação/exportação local |
-| Idiomas | Inglês, chinês, português, japonês, espanhol, russo |
+| Idiomas | Inglês, chinês, português, japonês, espanhol, russo, alemão |
 
 ## Por que jogar
 
@@ -103,7 +103,7 @@ Capturadas desta implementação com uma conta de teste sintética e diálogo of
 - **Gestão de tempo sob pressão** — sete dias, metas diárias crescentes, uma loja com melhorias e entregas para retirar.
 - **Caos no escritório** — acidentes de vírus, apagão, incêndio e batida policial quebram a rotina.
 - **Tom de comédia sombria** — cenários absurdos e fictícios e um chefe implacável; nada real é coletado.
-- **Nada para instalar** — roda no navegador; seis idiomas de interface; hospede você mesmo no Cloudflare para experimentos no plano gratuito.
+- **Nada para instalar** — roda no navegador; sete idiomas de interface; hospede você mesmo no Cloudflare para experimentos no plano gratuito.
 
 ## Assista ao trailer
 
