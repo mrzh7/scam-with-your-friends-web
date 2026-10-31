@@ -1,0 +1,100 @@
+{
+  "en": {
+    "label": "OPEN SOURCE PROJECT",
+    "title": "This game is open source.",
+    "description": "AI callers. A 3D office. Chaos with friends. Explore the code behind this unofficial browser remake, host your own version, and help build what comes next.",
+    "features": [
+      "Explore the source",
+      "Self-host",
+      "Contribute"
+    ],
+    "star": "Star on GitHub",
+    "docs": "Code & setup guide",
+    "support": "Enjoy the game? Give the project a Star.",
+    "compact": "Open source. Make it your own."
+  },
+  "zh": {
+    "label": "开源项目 · OPEN SOURCE",
+    "title": "这个游戏，已经开源了。",
+    "description": "AI 来电、3D 办公室、和朋友一起搞事情。这个非官方网页重制的源码已公开，欢迎自己部署、改玩法，一起把游戏做得更有趣。",
+    "features": [
+      "查看源码",
+      "自行部署",
+      "参与贡献"
+    ],
+    "star": "去 GitHub 点个 Star",
+    "docs": "源码与部署指南",
+    "support": "觉得好玩？给开源项目一个 Star。",
+    "compact": "游戏已开源，欢迎一起折腾。"
+  },
+  "pt": {
+    "label": "PROJETO DE CÓDIGO ABERTO",
+    "title": "Este jogo é de código aberto.",
+    "description": "Chamadas com IA, um escritório 3D e caos com amigos. Explore o código desta recriação não oficial para navegador, hospede sua versão e ajude a criar o que vem a seguir.",
+    "features": [
+      "Explore o código",
+      "Hospede sua versão",
+      "Contribua"
+    ],
+    "star": "Dê uma Star no GitHub",
+    "docs": "Código e instalação",
+    "support": "Curtiu o jogo? Dê uma Star ao projeto.",
+    "compact": "Código aberto. Crie sua versão."
+  },
+  "ja": {
+    "label": "オープンソースプロジェクト",
+    "title": "このゲーム、ソース公開中。",
+    "description": "AI との通話、3D オフィス、友達との大騒ぎ。この非公式ブラウザリメイクのコードを公開しています。自分で動かしたり、遊び方を変えたり、一緒にゲームを育てませんか。",
+    "features": [
+      "ソースを見る",
+      "自分でホスト",
+      "開発に参加"
+    ],
+    "star": "GitHub で Star",
+    "docs": "コードと導入ガイド",
+    "support": "気に入ったら、Star で応援してください。",
+    "compact": "ソース公開中。あなたのアイデアも。"
+  },
+  "es": {
+    "label": "PROYECTO DE CÓDIGO ABIERTO",
+    "title": "Este juego es de código abierto.",
+    "description": "Llamadas con IA, una oficina 3D y caos con amigos. Explora el código de esta recreación no oficial para navegador, aloja tu versión y ayuda a crear lo que viene.",
+    "features": [
+      "Explora el código",
+      "Aloja tu versión",
+      "Contribuye"
+    ],
+    "star": "Dale una Star en GitHub",
+    "docs": "Código y guía de instalación",
+    "support": "¿Te gusta el juego? Apoya el proyecto con una Star.",
+    "compact": "Código abierto. Hazlo tuyo."
+  },
+  "ru": {
+    "label": "ПРОЕКТ С ОТКРЫТЫМ КОДОМ",
+    "title": "Исходный код игры открыт.",
+    "description": "Звонки от ИИ, трёхмерный офис и хаос с друзьями. Изучайте код этой неофициальной браузерной версии, запускайте свою и помогайте развивать игру.",
+    "features": [
+      "Изучайте код",
+      "Запускайте свой сервер",
+      "Участвуйте в разработке"
+    ],
+    "star": "Поставить звезду на GitHub",
+    "docs": "Код и руководство по установке",
+    "support": "Нравится игра? Поддержите проект звездой.",
+    "compact": "Открытый код. Создайте свою версию."
+  },
+  "de": {
+    "label": "OPEN-SOURCE-PROJEKT",
+    "title": "Dieses Spiel ist Open Source.",
+    "description": "KI-Anrufer. Ein 3D-Büro. Chaos mit Freunden. Entdecke den Code hinter diesem inoffiziellen Browser-Remake, hoste deine eigene Version und hilf mit, das Nächste zu bauen.",
+    "features": [
+      "Quellcode ansehen",
+      "Selbst hosten",
+      "Mitmachen"
+    ],
+    "star": "Auf GitHub sterne",
+    "docs": "Code & Setup-Anleitung",
+    "support": "Gefällt dir das Spiel? Gib dem Projekt einen Stern.",
+    "compact": "Open Source. Mach es zu deinem."
+  }
+}
