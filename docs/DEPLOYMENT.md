@@ -108,3 +108,5 @@ CI in the public repository only checks/tests/builds; it does not deploy. It req
 ## 5. Launch and recovery
 
 Back up D1 before changing schema. A code rollback does not undo a schema migration. Keep old and new schema changes backward-compatible where possible. Check OAuth callbacks and mail domain verification after changing hostnames. Review provider budgets, privacy notices, account-data deletion process and monitoring before inviting users. See PRIVACY.md and SECURITY.md for current limitations.
+
+> **Sync note:** `src/App.tsx` must keep rendering `<OpenSourceBanner/>` (repo link https://github.com/mrzh7/scam-with-your-friends-web). `tests/open-source-banner.test.ts` guards this; keep it when syncing public main to the deploy repo.

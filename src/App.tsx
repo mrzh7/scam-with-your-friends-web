@@ -1,4 +1,5 @@
 import {ExpansionGuide} from './components/ExpansionGuide';
+import { OpenSourceBanner } from './OpenSourceBanner';
 import { FocusPicker, PersonaEditor, TeamDesk } from './components/CampaignApps';
 import { Studio, RecordingBadge } from './components/Studio';
 import { LobbyBrowser } from './components/LobbyBrowser';
@@ -64,7 +65,7 @@ type OpenWindow = { id: AppId; z: number; minimized: boolean; x: number; y: numb
 const money = (n: number) => `$${n.toLocaleString(languageTags[getLocale()])}`;
 const time = (n: number) => `${String(Math.floor(n / 60)).padStart(2, '0')}:${String(n % 60).padStart(2, '0')}`;
 function Modal({ title, children, onClose, wide = false }: { title: string; children: ReactNode; onClose: () => void; wide?: boolean }) { const ref = useRef<HTMLDivElement>(null); useEffect(() => { const previous = document.activeElement as HTMLElement; const el = ref.current; el?.querySelector<HTMLElement>('button,input')?.focus(); const trap = (event: KeyboardEvent) => { if (event.key !== 'Tab' || !el) return; const nodes = [...el.querySelectorAll<HTMLElement>('button:not(:disabled),input,select,a[href],textarea')]; const first = nodes[0], last = nodes.at(-1); if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); } else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); } }; el?.addEventListener('keydown', trap); return () => { el?.removeEventListener('keydown', trap); previous?.focus(); }; }, []); return <div className="modal-scrim" onMouseDown={e => { if (e.target === e.currentTarget) onClose(); }}><div ref={ref} className={`modal ${wide ? 'wide' : ''}`} role="dialog" aria-modal="true" aria-label={t(title)}><header><span>{t(title)}</span><button onClick={onClose} aria-label={t("关闭弹窗")}><Icon name="close"/></button></header>{children}</div></div>; }
-export default function App() { useLocale(); return <AccountGate>{(session, logout) => <GameApp key={session.user.id} initial={session} onLogout={logout}/>}</AccountGate>; }
+export default function App() { useLocale(); return <div className="source-site"><OpenSourceBanner/><div className="source-site-content"><AccountGate>{(session, logout) => <GameApp key={session.user.id} initial={session} onLogout={logout}/>}</AccountGate></div></div>; }
 function GameApp({initial, onLogout}: {initial: AccountSession; onLogout: () => Promise<void>}) {
  const account = initial.user; const language=useLanguagePreference();
  const [solo, setSolo] = useState<GameState>(initial.state); const network = useRoom(); const game = network.room?.game || solo; const total = network.room?.total ?? game.earned;

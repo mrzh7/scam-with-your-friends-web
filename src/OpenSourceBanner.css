@@ -1,0 +1,71 @@
+/* The project announcement belongs to the site, outside the simulated game UI. */
+.source-site { height: 100dvh; display: flex; flex-direction: column; background: #172e30; }
+.source-site-content { flex: 1; min-height: 0; overflow: auto; }
+.source-site:has(.auth-screen) { height: auto; min-height: 100dvh; }
+.source-site:has(.auth-screen) .source-site-content { overflow: visible; }
+.source-site-content > .auth-screen { position: relative; min-height: calc(100dvh - var(--source-banner-height, 164px)); padding-top: 86px; }
+.source-site-content .auth-screen > .language-selector { position: absolute; }
+.source-site-content > .game-root { height: 100%; }
+.source-banner { flex: 0 0 auto; position: relative; color: #213b34; background: #f0d366; border-bottom: 4px solid #bc9d40; }
+.source-banner::before { content: ''; position: absolute; inset: 0 0 auto; height: 4px; background: repeating-linear-gradient(120deg, #273e34 0 14px, transparent 14px 28px); opacity: .28; }
+.source-banner-inner { max-width: 1440px; margin: 0 auto; padding: 23px 42px 21px; display: flex; align-items: center; gap: 25px; }
+.source-banner-mark { width: 66px; height: 66px; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid #29433650; border-radius: 16px; background: #fff4bf55; box-shadow: 3px 3px 0 #29433620; transform: rotate(-5deg); }
+.source-banner-copy { flex: 1; min-width: 0; }
+.source-banner-eyebrow { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 10px; font-weight: 800; letter-spacing: 1.1px; }
+.source-banner-dot { width: 6px; height: 6px; border-radius: 50%; background: #2b6545; }
+.source-banner-project { border-left: 1px solid #29433655; padding-left: 10px; font-size: 10px; letter-spacing: .2px; font-weight: 500; }
+.source-banner h2 { margin: 8px 0 7px; font-size: clamp(23px, 2.35vw, 34px); line-height: 1.25; letter-spacing: -.7px; font-weight: 850; text-wrap: balance; }
+.source-banner-description { max-width: 760px; font-size: 12px; line-height: 1.75; color: #3e4e36; text-wrap: pretty; }
+.source-banner-features { display: flex; flex-wrap: wrap; gap: 5px 17px; margin: 9px 0 0; padding: 0; list-style: none; font-size: 10px; font-weight: 650; }
+.source-banner-features li::before { content: '+'; padding-right: 6px; font-weight: 800; color: #426043; }
+.source-banner-actions { display: flex; flex-direction: column; align-items: center; gap: 9px; flex-shrink: 0; max-width: 280px; }
+.source-banner-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; border-radius: 6px; min-height: 44px; font-weight: 750; text-align: center; }
+.source-banner-actions .source-banner-star { padding: 12px 18px; background: #203e32; color: #fff4c3; box-shadow: 0 3px 0 #0f271d; font-size: 13px; }
+.source-banner-star:hover { background: #315540; }
+.source-banner-actions .source-banner-docs { min-height: 30px; padding: 4px 9px; font-size: 11px; }
+.source-banner-docs:hover { background: #fff4bf70; text-decoration: underline; }
+.source-banner-actions a:focus-visible { outline: 3px solid #213b34; outline-offset: 4px; }
+.source-banner-actions small { font-size: 10px; color: #4c553a; line-height: 1.5; }
+.source-banner-compact { display: none; }
+
+/* Keep the full announcement on entry and the menu; use one row during play. */
+.source-site:has(.game-root:not(.view-menu)) .source-banner-inner { padding: 9px 24px; gap: 13px; }
+.source-site:has(.game-root:not(.view-menu)) .source-banner-mark,
+.source-site:has(.game-root:not(.view-menu)) .source-banner h2,
+.source-site:has(.game-root:not(.view-menu)) .source-banner-description,
+.source-site:has(.game-root:not(.view-menu)) .source-banner-features,
+.source-site:has(.game-root:not(.view-menu)) .source-banner-project,
+.source-site:has(.game-root:not(.view-menu)) .source-banner-actions small,
+.source-site:has(.game-root:not(.view-menu)) .source-banner-docs { display: none; }
+.source-site:has(.game-root:not(.view-menu)) .source-banner-compact { display: block; margin-top: 4px; font-size: 12px; line-height: 1.4; }
+.source-site:has(.game-root:not(.view-menu)) .source-banner-star { min-height: 38px; padding: 8px 13px; font-size: 11px; }
+.source-site-content .os-window { max-height: calc(100dvh - var(--source-banner-height, 65px) - 145px); }
+.source-site-content .shift-countdown-warning { top: calc(var(--source-banner-height, 65px) + env(safe-area-inset-top, 0px) + 66px); }
+
+@media (max-width: 1050px) {
+  .source-banner-inner { padding: 22px 28px; gap: 20px; }
+  .source-banner-mark { display: none; }
+  .source-banner-project { display: none; }
+}
+@media (max-width: 800px) {
+  .source-banner-inner { padding: 20px; align-items: stretch; flex-direction: column; gap: 14px; }
+  .source-banner h2 { font-size: 27px; }
+  .source-banner-description { font-size: 12px; }
+  .source-banner-features { margin-top: 7px; }
+  .source-banner-actions { flex-direction: row; flex-wrap: wrap; justify-content: flex-start; gap: 6px 12px; max-width: none; }
+  .source-banner-actions small { display: none; }
+  .source-banner-actions .source-banner-star { font-size: 12px; padding: 11px 14px; }
+  .source-banner-actions .source-banner-docs { min-height: 44px; }
+  .source-site-content > .auth-screen { padding-top: 105px; }
+  .source-site-content .auth-screen > .language-selector { top: 43px; right: 18px; left: 18px; justify-content: flex-end; font-size: 11px; gap: 10px; }
+  .source-site-content .public-guide-link { left: 20px; top: 21px; }
+  .source-site-content .os-window { max-height: calc(100dvh - var(--source-banner-height, 70px) - 129px); }
+  .source-site:has(.game-root:not(.view-menu)) .source-banner-inner { flex-direction: row; align-items: center; padding: 10px 12px; gap: 10px; }
+  .source-site:has(.game-root:not(.view-menu)) .source-banner-eyebrow { font-size: 8px; letter-spacing: .5px; gap: 5px; }
+  .source-site:has(.game-root:not(.view-menu)) .source-banner-compact { font-size: 10px; }
+  .source-site:has(.game-root:not(.view-menu)) .source-banner-star { max-width: 180px; min-height: 42px; gap: 6px; padding: 8px 10px; }
+  .source-site:has(.game-root:not(.view-menu)) .source-banner-star > svg:last-child { display: none; }
+}
+@media (max-width: 600px) {
+  .source-site-content .shift-countdown-warning { top: calc(var(--source-banner-height, 70px) + env(safe-area-inset-top, 0px) + 58px); }
+}
